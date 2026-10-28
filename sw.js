@@ -1,6 +1,6 @@
-const VERSION = '8-1-snd';
-const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './maskable-512.png', './apple-touch-icon.png', './NaskhArabic-400.woff2', './NaskhArabic-700.woff2'];
-const PDFS = ["./english-book.pdf", "./english-cards.pdf", "./english-cards-g1.pdf", "./english-cards-g2.pdf", "./english-cards-g3.pdf", "./english-cards-g4.pdf", "./english-cards-g5.pdf", "./english-cards-g6.pdf", "./english-cards-g7.pdf", "./english-cards-g8.pdf"];
+const VERSION = 'urdu-daily-v1-snd';
+const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './maskable-512.png', './apple-touch-icon.png', './NastaliqUrdu.woff2', './NaskhArabic-400.woff2', './NaskhArabic-700.woff2'];
+const PDFS = ["./urdu-book.pdf", "./urdu-cards.pdf", "./urdu-cards-g1.pdf", "./urdu-cards-g2.pdf", "./urdu-cards-g3.pdf", "./urdu-cards-g4.pdf", "./urdu-cards-g5.pdf", "./urdu-cards-g6.pdf", "./urdu-cards-g7.pdf", "./urdu-cards-g8.pdf"];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(VERSION).then(c => c.addAll(SHELL).then(() => Promise.all(PDFS.map(u => c.add(u).catch(() => {}))))).then(() => self.skipWaiting()));

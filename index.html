@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ur">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -8,7 +8,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="English">
+<meta name="apple-mobile-web-app-title" content="Urdu">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -18,7 +18,7 @@ html{background:#F1F4F3}
 body{margin:0}
 [hidden]{display:none!important}
 </style>
-<title>انگلش روزانہ</title>
+<title>Urdu Daily</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
 <style>
@@ -248,62 +248,44 @@ svg{display:block}
 </style>
 
 <style>
+@font-face{font-family:'Noto Nastaliq Urdu';src:url(NastaliqUrdu.woff2) format('woff2');font-weight:400 900;font-display:swap}
 @font-face{font-family:'Noto Naskh Arabic';src:url(NaskhArabic-400.woff2) format('woff2');font-weight:400 500;font-display:swap}
 @font-face{font-family:'Noto Naskh Arabic';src:url(NaskhArabic-700.woff2) format('woff2');font-weight:600 900;font-display:swap}
-:root{--han:'Fraunces','Georgia','Noto Naskh Arabic',serif;--ui:'Figtree','Noto Naskh Arabic',system-ui,sans-serif}
-body,button{font-family:'Figtree','Noto Naskh Arabic',system-ui,sans-serif}
-.e,.p,.py,.sub,.en,.enl,.pyl,.hint,.mv-sub,.mv-en,.docue,.tip,.qtitle,.tcard em,.tcard small,.thead .py,.fb .py,.fb .en,.rev-t,.mis-s,.inst-t,.tt{unicode-bidi:plaintext}
-.logo,.day-n,.big,.mv-word,.act-zh,.tok .h,.pick .h,.cpill,.bub .zh{font-variation-settings:'opsz' 72}
-.big{font-size:clamp(54px,19vw,84px);word-break:normal;overflow-wrap:anywhere;text-align:center;font-weight:800;letter-spacing:-.01em;line-height:1.15}
-.hanzi-row{font-size:24px;gap:2px 16px;font-weight:700}
-.stair .h{font-size:15px}
-.rev-h{font-size:18px}
-.mv-word{font-size:clamp(34px,11vw,54px);overflow-wrap:anywhere}
-.act-zh{font-size:clamp(30px,10vw,46px)}
-.tok .h{font-size:clamp(20px,6.3vw,30px);font-weight:800}
-.tok{padding:0 1px}
-.sent{gap:8px 10px}
-.pick .h{font-size:clamp(17px,5.4vw,24px);overflow-wrap:anywhere;text-align:center}
-.pick .p{font-size:17px;line-height:1.5}
-.pick .e{font-size:16px;line-height:1.5}
-.tok .p{font-size:17px;line-height:1.5}
-.cpill{font-size:16px}
-.part b{font-size:20px}
-.opt{font-size:26px;overflow-wrap:anywhere}
-.miss b{font-size:18px}
-.bub .zh{font-size:19px}
-.bub .pyl{font-size:16px;line-height:1.6}
-.bub .enl{font-size:16px;line-height:1.6}
-.sub{font-size:19px;line-height:1.7}
-.en{font-size:24px;line-height:1.6}
-.thead .py{font-size:26px;line-height:1.5}
-.fb .py{font-size:24px}
-.fb .en{font-size:20px}
-.hint{line-height:1.6}
-.mv-sub{font-size:17px;line-height:1.7}
-.mv-en{line-height:1.7}
-.tcard b{font-size:24px;line-height:1.6}
-.tcard span{font-size:20px}
-.tcard span small{font-size:16px;color:var(--muted)}
-.tcard em{font-size:15px;line-height:1.7}
-.tip{line-height:1.7}
-.qtitle{line-height:1.5}
-.docue{line-height:1.7}
-.slots{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;padding:18px 10px;--sw:min(42px,calc((min(100vw,480px) - 80px)/var(--n)))}
-.slot{width:var(--sw);height:calc(var(--sw)*1.25);min-width:20px;border-bottom:3px solid var(--ink);display:grid;place-items:center;font-family:var(--han);font-weight:800;font-size:calc(var(--sw)*.75);color:var(--ink)}
+:root{--han:'Noto Nastaliq Urdu','Noto Naskh Arabic',serif}
+.logo,.day-n,.big,.mv-word,.act-zh,.tok .h,.pick .h,.cpill,.bub .zh,.hanzi-row,.stair .h,.rev-h,.opt,.miss b,.part b,.tcard span,.tcard b,.topt b,.slot,.tile{unicode-bidi:plaintext}
+.big{font-size:clamp(54px,19vw,88px);line-height:2;word-break:normal;overflow-wrap:anywhere;text-align:center;font-weight:700}
+.hanzi-row{font-size:24px;gap:2px 16px;font-weight:700;line-height:2;direction:rtl}
+.stair .h{font-size:20px;line-height:2}
+.rev-h{font-size:22px;line-height:2}
+.mv-word{font-size:clamp(30px,9vw,46px);overflow-wrap:anywhere;line-height:2}
+.act-zh{font-size:clamp(28px,8.5vw,40px);line-height:2}
+.tok .h{font-size:clamp(22px,6.8vw,32px);font-weight:700;line-height:2}
+.tok{padding:0 2px}
+.sent{gap:4px 12px;direction:rtl;justify-content:center}
+.tok .p{direction:ltr}
+.pick .h{font-size:clamp(20px,6vw,28px);overflow-wrap:anywhere;text-align:center;line-height:2}
+.cpill{font-size:20px;line-height:1.9}
+.part b{font-size:24px;line-height:2}
+.opt{font-size:30px;overflow-wrap:anywhere;line-height:2}
+.miss b{font-size:22px;line-height:2}
+.bub .zh{font-size:21px;line-height:2.1}
+.tcard b{font-size:20px}
+.tcard span{font-size:26px;line-height:2}
+.tcard span small{font-size:13px;color:var(--muted)}
+.slots{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;padding:18px 10px;--sw:min(46px,calc((min(100vw,480px) - 80px)/var(--n)))}
+.slot{width:var(--sw);height:calc(var(--sw)*1.4);min-width:22px;border-bottom:3px solid var(--ink);display:grid;place-items:center;font-family:var(--han);font-weight:700;font-size:calc(var(--sw)*.8);line-height:2;color:var(--ink)}
 .slot.on{border-color:var(--jade);color:var(--jade)}
 .slot.gh{color:var(--seal);opacity:.35}
 .sgap{width:14px}
-.spbox{display:grid;place-items:center;min-height:110px;aspect-ratio:auto;width:100%}
+.spbox{display:grid;place-items:center;min-height:120px;aspect-ratio:auto;width:100%}
 .tiles{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:420px;margin:0 auto}
-.tile{width:52px;height:56px;border-radius:14px;background:var(--surface);border:2px solid var(--line);font-family:var(--han);font-weight:800;font-size:28px;display:grid;place-items:center}
+.tile{width:56px;height:62px;border-radius:14px;background:var(--surface);border:2px solid var(--line);font-family:var(--han);font-weight:700;font-size:32px;line-height:1.6;display:grid;place-items:center;padding-top:6px}
 .tile:active{transform:scale(.95)}
 .tile.used{opacity:.18}
 .tile.bad{background:var(--bad);border-color:var(--seal);animation:shake .3s}
 .tile.hint{border-color:var(--jade);background:var(--good)}
-.topt b{line-height:1.1}
-
-.mv-help,.mv-sub,.tcard em,.tcard small{unicode-bidi:plaintext}
+.topt b{line-height:1.8}
+.thead .py{font-size:22px}
 </style>
 <script>/* speech hardening: unlock on first tap, explicit voice, safe cancel */
 (function(){try{var ss=window.speechSynthesis;if(!ss||!window.SpeechSynthesisUtterance)return;
@@ -582,7 +564,7 @@ const DAYS=[
 ];
 
 /* ---------- state ---------- */
-const KEY='ur_english_daily_v1';
+const KEY='urdu_daily_v1';
 let S={done:{}};
 try{const r=localStorage.getItem(KEY);if(r)S=JSON.parse(r)||S;if(!S.done)S.done={}}catch(e){}
 if(!S.w)S.w={};
@@ -597,15 +579,15 @@ let V={test:false,res:[],view:'home',day:firstTodo(),i:0,q:[],score:0,answered:n
 
 const $=s=>document.querySelector(s);
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
-function speak(t,r=.8,p=1){try{const u=new SpeechSynthesisUtterance(t);u.lang=ES_LANG;u.rate=r;u.pitch=p;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
+function speak(t,r=.8,p=1){try{const u=new SpeechSynthesisUtterance(urText(t));u.lang=urLang();u.rate=r;u.pitch=p;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 function say(t,r=.8,p=1){return new Promise(res=>{let tm,done=false;const f=()=>{if(!done){done=true;clearTimeout(tm);res()}};
-  try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang=ES_LANG;u.rate=r;u.pitch=p;u.onend=f;u.onerror=f;tm=setTimeout(f,Math.max(1800,t.length*650));speechSynthesis.speak(u)}catch(e){res()}})}
+  try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(urText(t));u.lang=urLang();u.rate=r;u.pitch=p;u.onend=f;u.onerror=f;tm=setTimeout(f,Math.max(1800,t.length*650));speechSynthesis.speak(u)}catch(e){res()}})}
 const D=()=>DAYS[V.day-1];
 
 /* ---------- shared bits ---------- */
 function topbar(label,frac){
-  return `<div class="bar"><button class="icon-btn" data-a="home" aria-label="بند کریں">${ICON.x}</button>
+  return `<div class="bar"><button class="icon-btn" data-a="home" aria-label="Close">${ICON.x}</button>
   <div class="track"><i style="width:${Math.round(frac*100)}%"></i></div><div class="step-label">${label}</div></div>`;
 }
 
@@ -617,8 +599,8 @@ window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredIns
 window.addEventListener('appinstalled',()=>{S.inst=1;save();deferredInstall=null;if(V.view==='home')home()});
 function instBanner(){
   if(isStandalone()||S.inst)return '';
-  const help=V.instHelp?`<div class="inst-h">${isIOS()?'شیئر کا بٹن دبائیں، پھر "ہوم اسکرین پر شامل کریں" چنیں۔':'براؤزر کا مینو کھولیں، پھر "ایپ انسٹال کریں" یا "ہوم اسکرین پر شامل کریں" دبائیں۔'}</div>`:'';
-  return `<div class="inst"><div class="inst-t">ہوم اسکرین پر شامل کریں</div><button class="btn" data-a="inst">${V.instHelp?'ٹھیک ہے':'شامل کریں'}</button><button class="icon-btn" data-a="instx" aria-label="چھپائیں">${ICON.x}</button>${help}</div>`;
+  const help=V.instHelp?`<div class="inst-h">${isIOS()?'Tap the Share button, then Add to Home Screen.':'Open the browser menu, then tap Install app or Add to Home screen.'}</div>`:'';
+  return `<div class="inst"><div class="inst-t">Add to home screen</div><button class="btn" data-a="inst">${V.instHelp?'Got it':'Add'}</button><button class="icon-btn" data-a="instx" aria-label="Hide">${ICON.x}</button>${help}</div>`;
 }
 
 /* ---------- study timer ---------- */
@@ -626,8 +608,8 @@ const dkey=()=>{try{return new Date().toLocaleDateString('en-CA')}catch(e){retur
 let lastAct=Date.now(),tmDirty=0;
 ['pointerdown','keydown','touchstart','scroll'].forEach(ev=>addEventListener(ev,()=>{lastAct=Date.now()},{passive:true,capture:true}));
 function fmtT(s){const m=Math.floor(s/60);return m<60?m+'m':Math.floor(m/60)+'h '+String(m%60).padStart(2,'0')+'m'}
-function tmText(){const T=S.time||{total:0,days:{}};return V.tmAll?'کل '+fmtT(T.total||0):fmtT((T.days||{})[dkey()]||0)}
-function tmBtn(){return `<button class="tmr" id="tm" data-a="tmr" aria-label="سیکھنے کا وقت"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/></svg><span id="tmt">${tmText()}</span></button>`}
+function tmText(){const T=S.time||{total:0,days:{}};return V.tmAll?'All '+fmtT(T.total||0):fmtT((T.days||{})[dkey()]||0)}
+function tmBtn(){return `<button class="tmr" id="tm" data-a="tmr" aria-label="Time spent learning"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 2h6"/></svg><span id="tmt">${tmText()}</span></button>`}
 setInterval(()=>{
   if(document.visibilityState!=='visible'||Date.now()-lastAct>90000)return;
   const T=S.time=S.time||{total:0,days:{}};if(!T.days)T.days={};
@@ -642,68 +624,68 @@ addEventListener('pagehide',save);document.addEventListener('visibilitychange',(
 function streakInfo(){
   const D=(S.time&&S.time.days)||{},out=[];const now=new Date();
   const key=d=>{try{return d.toLocaleDateString('en-CA')}catch(e){return d.toISOString().slice(0,10)}};
-  for(let i=6;i>=0;i--){const d=new Date(now);d.setDate(now.getDate()-i);out.push({l:'اپمبججہ'[d.getDay()],on:(D[key(d)]||0)>=60,today:i===0})}
+  for(let i=6;i>=0;i--){const d=new Date(now);d.setDate(now.getDate()-i);out.push({l:'SMTWTFS'[d.getDay()],on:(D[key(d)]||0)>=60,today:i===0})}
   let n=0;for(let i=0;i<400;i++){const d=new Date(now);d.setDate(now.getDate()-i);if((D[key(d)]||0)>=60)n++;else if(i>0)break;else continue}
   return {days:out,n};
 }
 function streakRow(){
   const s=streakInfo();
-  return `<div class="streak" aria-label="${s.n} دن لگاتار"><div class="sdots">${s.days.map(d=>`<span class="sd ${d.on?'on':''} ${d.today?'today':''}">${d.l}</span>`).join('')}</div><div class="sn"><svg viewBox="0 0 24 24"><path d="M12 2c1 4 5 6 5 11a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6 1-10z"/></svg>${s.n}</div></div>`;
+  return `<div class="streak" aria-label="${s.n} day streak"><div class="sdots">${s.days.map(d=>`<span class="sd ${d.on?'on':''} ${d.today?'today':''}">${d.l}</span>`).join('')}</div><div class="sn"><svg viewBox="0 0 24 24"><path d="M12 2c1 4 5 6 5 11a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6 1-10z"/></svg>${s.n}</div></div>`;
 }
 
 function home(){
   const d=D(),p=prog(d.n);
   const todo=!p.learn?'learn':!p.trace?'trace':p.quiz==null?'quiz':'learn';
-  const label=dayDone(d.n)?'پھر مشق کریں':(p.learn||p.trace||p.quiz!=null)?'جاری رکھیں':'شروع کریں';
+  const label=dayDone(d.n)?'Practise again':(p.learn||p.trace||p.quiz!=null)?'Continue':'Start';
   const st=(k,t,s)=>`<button class="step ${k?'on':''}" data-a="start" data-s="${s}"><i></i>${t}</button>`;
   const G=Math.ceil(d.n/6),NG=Math.ceil(DAYS.length/6);
   const grpDone=g=>DAYS.slice(g*6-6,g*6).every(x=>dayDone(x.n));
-  const gtabs=Array.from({length:NG},(_,i)=>`<button class="gtab ${i+1===G?'sel':''}" data-a="grp" data-g="${i+1}">گروپ ${i+1}${grpDone(i+1)?ICON.check:''}</button>`).join('');
+  const gtabs=Array.from({length:NG},(_,i)=>`<button class="gtab ${i+1===G?'sel':''}" data-a="grp" data-g="${i+1}">Group ${i+1}${grpDone(i+1)?ICON.check:''}</button>`).join('');
   const kw=knownWords(),wk=weakWords();
   const lastT=(S.tests||[]).filter(x=>!x.full).slice(-1)[0],lastF=(S.tests||[]).filter(x=>x.full).slice(-1)[0],grpsL=new Set(DAYS.filter(d=>{const p=S.done[d.n];return p&&(p.learn||p.quiz!=null)}).map(d=>Math.ceil(d.n/6))).size,lastTn=(S.tones||[]).slice(-1)[0];
   const ap=actPool();
-  const revCard=kw.length>=4?`<div class="revcol"><button class="rev" data-a="start" data-s="review"><span class="rev-t">دہرائی</span><span class="rev-h">${(wk.length?wk:shuffle(kw)).slice(0,4).map(w=>`<span>${w[0]}</span>`).join('')}</span><span class="rev-go">${ICON.play}</span></button><div class="revrow"><button class="rev test" data-a="start" data-s="test"><span class="rev-t">ٹیسٹ</span><span class="rev-last">${lastT?lastT.s+'/'+lastT.n:'چلو'}</span></button>${ap.length>=2?`<button class="rev test" data-a="start" data-s="act"><span class="rev-t">اداکاری</span><span class="rev-last">${ap.length}</span></button>`:''}<button class="rev test" data-a="start" data-s="tones"><span class="rev-t">آوازیں</span><span class="rev-last">${lastTn?lastTn.s+'/'+lastTn.n:'چلو'}</span></button></div><div class="revrow"><button class="rev test" data-a="start" data-s="move"><span class="rev-t">حرکت</span><span class="rev-last">${S.moves?S.moves+' مکمل':'چلو'}</span></button>${grpsL>=3?`<button class="rev test" data-a="start" data-s="fulltest"><span class="rev-t">مکمل ٹیسٹ</span><span class="rev-last">${lastF?lastF.s+'/'+lastF.n:'چلو'}</span></button>`:''}</div></div>`:`<div class="revcol"><div class="revrow"><button class="rev test" data-a="start" data-s="tones"><span class="rev-t">آوازیں</span><span class="rev-last">${lastTn?lastTn.s+'/'+lastTn.n:'چلو'}</span></button><button class="rev test" data-a="start" data-s="move"><span class="rev-t">حرکت</span><span class="rev-last">${S.moves?S.moves+' مکمل':'چلو'}</span></button></div></div>`;
+  const revCard=kw.length>=4?`<div class="revcol"><button class="rev" data-a="start" data-s="review"><span class="rev-t">Review</span><span class="rev-h">${(wk.length?wk:shuffle(kw)).slice(0,4).map(w=>`<span>${w[0]}</span>`).join('')}</span><span class="rev-go">${ICON.play}</span></button><div class="revrow"><button class="rev test" data-a="start" data-s="test"><span class="rev-t">Test</span><span class="rev-last">${lastT?lastT.s+'/'+lastT.n:'Start'}</span></button>${ap.length>=2?`<button class="rev test" data-a="start" data-s="act"><span class="rev-t">Act</span><span class="rev-last">${ap.length} moves</span></button>`:''}<button class="rev test" data-a="start" data-s="tones"><span class="rev-t">Sounds</span><span class="rev-last">${lastTn?lastTn.s+'/'+lastTn.n:'Start'}</span></button></div><div class="revrow"><button class="rev test" data-a="start" data-s="move"><span class="rev-t">Move</span><span class="rev-last">${S.moves?S.moves+' done':'Start'}</span></button>${grpsL>=3?`<button class="rev test" data-a="start" data-s="fulltest"><span class="rev-t">Full test</span><span class="rev-last">${lastF?lastF.s+'/'+lastF.n:'Start'}</span></button>`:''}</div></div>`:`<div class="revcol"><div class="revrow"><button class="rev test" data-a="start" data-s="tones"><span class="rev-t">Sounds</span><span class="rev-last">${lastTn?lastTn.s+'/'+lastTn.n:'Start'}</span></button><button class="rev test" data-a="start" data-s="move"><span class="rev-t">Move</span><span class="rev-last">${S.moves?S.moves+' done':'Start'}</span></button></div></div>`;
   const rows=DAYS.filter(x=>Math.ceil(x.n/6)===G).reverse().map(x=>{
     const ok=open(x.n);
     return `<button class="stair ${x.n===V.day?'sel':''} ${ok?'':'lock'}" style="margin-left:calc(${(x.n-1)%6} * 3%)" data-a="day" data-n="${x.n}" ${ok?'':'aria-disabled="true"'}>
       <span class="n">${x.n}</span><span class="h">${x.w.map(w=>w[0]).join(' ')}</span>
       ${ok?`<span class="stars">${[1,2,3].map(i=>star(stars(x.n)>=i)).join('')}</span>`:ICON.lock}</button>`}).join('');
   $('#app').innerHTML=`
-  <div class="bar"><div class="logo">انگلش <b>روزانہ</b></div><div class="rt">${tmBtn()}<div class="pill">${star(true,18)}${totalStars()}</div></div></div>
+  <div class="bar"><div class="logo">Urdu <b>Daily</b></div><div class="rt">${tmBtn()}<div class="pill">${star(true,18)}${totalStars()}</div></div></div>
   ${instBanner()}
   <section class="hero">
-    <div class="hero-top"><div class="day-n">دن ${d.n}</div><div class="day-t">${d.t}</div></div>
+    <div class="hero-top"><div class="day-n">Day ${d.n}</div><div class="day-t">${d.t}</div></div>
     <div class="hanzi-row">${d.w.map(w=>`<span>${w[0]}</span>`).join('')}</div>
-    <div class="steps">${st(p.learn,'سیکھو','learn')}${st(p.trace,'ہجے','trace')}${st(p.quiz!=null,'کوئز','quiz')}${st(p.act,'اداکاری','actday')}${st(p.create,'بناؤ','create')}</div>
+    <div class="steps">${st(p.learn,'Learn','learn')}${st(p.trace,'Spell','trace')}${st(p.quiz!=null,'Quiz','quiz')}${st(p.act,'Act','actday')}${st(p.create,'Create','create')}</div>
     <button class="btn" data-a="start" data-s="${todo}">${label}</button>
   </section>
   ${streakRow()}
-  <button class="rev" data-a="start" data-s="mission"><span class="rev-t">مشن</span><span class="mis-s">ہجے · کوئز · حرکت</span><span class="rev-go">${S.mission===dkey()?ICON.check:ICON.play}</span></button>
+  <button class="rev" data-a="start" data-s="mission"><span class="rev-t">Mission</span><span class="mis-s">Spell · Quiz · Move · 5 min</span><span class="rev-go">${S.mission===dkey()?ICON.check:ICON.play}</span></button>
   ${revCard}
   <div class="gtabs">${gtabs}</div>
   <div class="stairs">${rows}</div>
-  <div class="bk-row"><button class="bk-link" data-a="print">پرنٹ</button><button class="bk-link" data-a="backup">بیک اپ</button></div>`;
+  <div class="bk-row"><button class="bk-link" data-a="print">Print</button><button class="bk-link" data-a="backup">Backup</button></div>`;
 }
 
 /* ---------- learn ---------- */
 function learn(){
   const d=D(),w=d.w[V.i],last=V.i===d.w.length-1;
-  $('#app').innerHTML=`${topbar(`سیکھو ${V.i+1}/${d.w.length}`,(V.i+1)/d.w.length*0.999)}
+  $('#app').innerHTML=`${topbar(`Learn ${V.i+1}/${d.w.length}`,(V.i+1)/d.w.length*0.999)}
   <div class="stage">
     <div class="card">
       <div class="big" style="font-size:${esBig(w[0])}">${w[0]}</div>
       <div class="py">${w[1]}</div>
       <div class="en">${w[2]}</div>
       <div class="say">
-        <button class="chip-btn" data-a="say" data-t="${w[0]}" data-r=".8">${ICON.spk}سنو</button>
-        <button class="chip-btn alt" data-a="say" data-t="${w[0]}" data-r=".4">${ICON.slow}آہستہ</button>
+        <button class="chip-btn" data-a="say" data-t="${w[0]}" data-r=".8">${ICON.spk}Play</button>
+        <button class="chip-btn alt" data-a="say" data-t="${w[0]}" data-r=".4">${ICON.slow}Slow</button>
       </div>
       ${w[3].length>1?`<div class="parts">${w[3].map(b=>`<button class="part" data-a="say" data-t="${b[0]}" data-r=".7"><b>${b[0]}</b><span>${b[1]}</span></button>`).join('')}</div>`:''}
     </div>
   </div>
   <div class="foot">
-    <button class="icon-btn" data-a="lprev" ${V.i===0?'disabled style="opacity:.35"':''} aria-label="واپس">${ICON.back}</button>
-    <button class="btn" data-a="lnext">${last?'ہجے کرو':'اگلا'}</button>
+    <button class="icon-btn" data-a="lprev" ${V.i===0?'disabled style="opacity:.35"':''} aria-label="Back">${ICON.back}</button>
+    <button class="btn" data-a="lnext">${last?'Spell it':'Next'}</button>
   </div>`;
   setTimeout(()=>speak(w[0]),120);
 }
@@ -717,7 +699,7 @@ function traceItems(d){
 }
 function trace(){
   const it=V.items[V.i],n=V.items.length;
-  $('#app').innerHTML=`${topbar(`ہجے ${V.i+1}/${n}`,(V.i)/n)}
+  $('#app').innerHTML=`${topbar(`Trace ${V.i+1}/${n}`,(V.i)/n)}
   <div class="stage">
     <div class="thead"><div class="py">${it.py}</div><div class="en">${it.m}</div></div>
     <div class="tbox" id="tbox">
@@ -727,16 +709,16 @@ function trace(){
       <canvas id="cv"></canvas>
     </div>
     <div class="tctl">
-      <button class="chip-btn" data-a="show" aria-label="دکھاؤ">${ICON.play}دکھاؤ</button>
-      <button class="icon-btn" data-a="say" data-t="${it.c}" data-r=".7" aria-label="سنو">${ICON.spk}</button>
-      <button class="icon-btn" data-a="clear" aria-label="مٹاؤ">${ICON.erase}</button>
+      <button class="chip-btn" data-a="show" aria-label="Show me how">${ICON.play}Show me</button>
+      <button class="icon-btn" data-a="say" data-t="${it.c}" data-r=".7" aria-label="Listen">${ICON.spk}</button>
+      <button class="icon-btn" data-a="clear" aria-label="Start over">${ICON.erase}</button>
     </div>
   </div>
-  <div class="foot"><button class="btn" data-a="tdone">${V.i===n-1?'ختم':'ہو گیا'}</button></div>`;
+  <div class="foot"><button class="btn" data-a="tdone">${V.i===n-1?'Finish':'Done'}</button></div>`;
   setupCanvas();
 }
 let hw=null,hwTimer=null,ac=null;
-const PRAISE=['شاباش!','بہت خوب!','زبردست!','جی ہاں!','واہ!'];
+const PRAISE=['Nice!','Great!','Lovely!','Yes!','Well done!'];
 function praise(){const b=$('#tbox');if(!b)return;const el=document.createElement('div');el.className='praise';el.textContent=PRAISE[Math.floor(Math.random()*PRAISE.length)];b.appendChild(el);setTimeout(()=>el.remove(),1150)}
 function chime(){try{const A=window.AudioContext||window.webkitAudioContext;ac=ac||new A();[660,880].forEach((f,i)=>{const o=ac.createOscillator(),g=ac.createGain();o.type='sine';o.frequency.value=f;o.connect(g);g.connect(ac.destination);const t=ac.currentTime+i*.12;g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.16,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+.35);o.start(t);o.stop(t+.4)})}catch(e){}}
 function strokeEnd(){if(V.view!=='trace')return;praise();chime();const c=V.items[V.i].c;setTimeout(()=>speak(c,.7),350)}
@@ -804,15 +786,15 @@ function buildReview(){
 function quiz(){
   const q=V.q[V.i],n=V.q.length,a=V.answered;
   const prompt=q.t==='m'
-    ?`<div class="hint">کون سا لفظ؟</div><div class="q">${q.w[2]}</div>`
-    :`<div class="hint">آپ نے کیا سنا؟</div><button class="speaker" data-a="say" data-t="${q.w[0]}" data-r=".8" aria-label="سنو">${ICON.spkBig}</button>`;
+    ?`<div class="hint">Which word?</div><div class="q">${q.w[2]}</div>`
+    :`<div class="hint">What did you hear?</div><button class="speaker" data-a="say" data-t="${q.w[0]}" data-r=".8" aria-label="Play">${ICON.spkBig}</button>`;
   const opts=q.opts.map((o,k)=>{
     let c='';if(a!=null){if(o===q.w)c='good';else if(k===a)c='bad'}
     return `<button class="opt ${c}" data-a="ans" data-k="${k}" ${a!=null?'disabled':''}>${o[0]}</button>`}).join('');
-  $('#app').innerHTML=`${topbar(`${V.test?'ٹیسٹ':V.review?'دہرائی':'کوئز'} ${V.i+1}/${n}`,V.i/n)}
+  $('#app').innerHTML=`${topbar(`${V.test?'Test':V.review?'Review':'Quiz'} ${V.i+1}/${n}`,V.i/n)}
   <div class="stage"><div class="prompt">${prompt}</div><div class="opts">${opts}</div>
-  <div class="fb">${a!=null?`<button class="fb-btn" data-a="say" data-t="${q.w[0]}" data-r=".7" aria-label="دوبارہ سنو">${ICON.spk}<span class="py">${q.w[1]}</span><span class="en">${q.w[2]}</span></button>`:''}</div></div>
-  <div class="foot"><button class="btn" data-a="qnext" ${a==null?'disabled':''}>${V.i===n-1?'اسکور دیکھو':'اگلا'}</button></div>`;
+  <div class="fb">${a!=null?`<button class="fb-btn" data-a="say" data-t="${q.w[0]}" data-r=".7" aria-label="Hear again">${ICON.spk}<span class="py">${q.w[1]}</span><span class="en">${q.w[2]}</span></button>`:''}</div></div>
+  <div class="foot"><button class="btn" data-a="qnext" ${a==null?'disabled':''}>${V.i===n-1?'See score':'Next'}</button></div>`;
   if(q.t==='a'&&a==null)setTimeout(()=>speak(q.w[0]),150);
 }
 
@@ -850,14 +832,14 @@ function tones(){
     S.tones=S.tones||[];S.tones.push({t:Date.now(),s:sc,n});if(S.tones.length>30)S.tones.shift();save();
     $('#app').innerHTML=`${topbar('Tones',1)}
     <div class="stage top" style="align-items:stretch;text-align:center"><div class="big-stars" style="margin-top:8px">${[1,2,3].map(i=>`<div class="pop">${star(s>=i,64)}</div>`).join('')}</div><div class="score">${sc}/${n}</div></div>
-    <div class="foot" style="flex-direction:column"><button class="btn" data-a="tnew">Again</button><button class="btn ghost" data-a="home">ہوم</button></div>`;
+    <div class="foot" style="flex-direction:column"><button class="btn" data-a="tnew">Again</button><button class="btn ghost" data-a="home">Home</button></div>`;
     chime();return;
   }
   const q=T.q[T.i],a=T.answered;
   $('#app').innerHTML=`${topbar(`Tones ${T.i+1}/${T.q.length}`,T.i/T.q.length)}
-  <div class="stage"><div class="prompt"><div class="hint">Which tone?</div><button class="speaker" data-a="say" data-t="${q[0]}" data-r=".6" aria-label="سنو">${ICON.spkBig}</button></div>
+  <div class="stage"><div class="prompt"><div class="hint">Which tone?</div><button class="speaker" data-a="say" data-t="${q[0]}" data-r=".6" aria-label="Play">${ICON.spkBig}</button></div>
   <div class="topts">${[1,2,3,4].map(t=>`<button class="topt ${a!=null?(t===q[2]?'good':t===a?'bad':''):''}" data-a="tans" data-k="${t}" ${a!=null?'disabled':''}>${tsvg(t)}<small>${TCAP[t]}</small></button>`).join('')}</div>
-  <div class="fb">${a!=null?`<button class="fb-btn" data-a="say" data-t="${q[0]}" data-r=".6" aria-label="دوبارہ سنو">${ICON.spk}<span class="py">${q[1]}</span><span class="en">${q[0]}</span></button>`:''}</div><div class="tip">${a!=null?'<b>Tone '+q[2]+'</b> · '+TTIP[q[2]]:'Listen: is it flat, rising, dipping or falling?'}</div></div>
+  <div class="fb">${a!=null?`<button class="fb-btn" data-a="say" data-t="${q[0]}" data-r=".6" aria-label="Hear again">${ICON.spk}<span class="py">${q[1]}</span><span class="en">${q[0]}</span></button>`:''}</div><div class="tip">${a!=null?'<b>Tone '+q[2]+'</b> · '+TTIP[q[2]]:'Listen: is it flat, rising, dipping or falling?'}</div></div>
   <div class="foot"><button class="btn" data-a="tnext" ${a==null?'disabled':''}>${T.i===T.q.length-1?'See score':'Next'}</button></div>`;
   if(a==null)setTimeout(()=>speak(q[0],.6),150);
 }
@@ -866,13 +848,13 @@ function tones(){
 const esc=x=>String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 /* ---------- move (TPR game) ---------- */
 const MDIRS=[
- {zh:'向前走！',py:'xiàng qián zǒu!',en:'آگے',ar:'⬆️'},
- {zh:'向后走！',py:'xiàng hòu zǒu!',en:'پیچھے',ar:'⬇️'},
- {zh:'向左走！',py:'xiàng zuǒ zǒu!',en:'بائیں',ar:'⬅️'},
- {zh:'向右走！',py:'xiàng yòu zǒu!',en:'دائیں',ar:'➡️'}];
+ {zh:'向前走！',py:'xiàng qián zǒu!',en:'forward',ar:'⬆️'},
+ {zh:'向后走！',py:'xiàng hòu zǒu!',en:'backwards',ar:'⬇️'},
+ {zh:'向左走！',py:'xiàng zuǒ zǒu!',en:'to the left',ar:'⬅️'},
+ {zh:'向右走！',py:'xiàng yòu zǒu!',en:'to the right',ar:'➡️'}];
 const MBODY=[['头','tóu','head'],['手','shǒu','hand'],['脚','jiǎo','foot'],['眼睛','yǎnjing','eyes',1],['鼻子','bízi','nose'],['嘴','zuǐ','mouth'],['耳朵','ěrduo','ears',1],['肚子','dùzi','tummy'],['腿','tuǐ','leg'],['肩膀','jiānbǎng','shoulder'],['膝盖','xīgài','knee'],['牙','yá','teeth',1],['头发','tóufa','hair'],['手指','shǒuzhǐ','fingers',1]];
 const O=(a,b,c)=>[a,b,c];
-const IDK=['我不知道','wǒ bù zhīdào',"مجھے نہیں معلوم"],IDU=['我不明白','wǒ bù míngbai',"مجھے سمجھ نہیں آیا"];
+const IDK=['我不知道','wǒ bù zhīdào',"I don't know"],IDU=['我不明白','wǒ bù míngbai',"I don't understand"];
 const MTALK=[
  {q:['你在哪里？','nǐ zài nǎlǐ?','Where are you?'],o:[
   [...O('我在这里','wǒ zài zhèlǐ','I am here'),'好！我也在这里。','hǎo! wǒ yě zài zhèlǐ.','Good! I am here too.','Point down at the floor: here'],
@@ -987,46 +969,46 @@ function moveV(){
   if(M.i>=M.q.length){
     if(V.mission){missionNext();return}
     S.moves=(S.moves||0)+1;save();
-    $('#app').innerHTML=`${topbar('حرکت',1)}
+    $('#app').innerHTML=`${topbar('Move',1)}
     <div class="stage top" style="align-items:center;text-align:center"><div class="big-stars" style="margin-top:8px">${[1,2,3].map(()=>`<div class="pop">${star(true,64)}</div>`).join('')}</div>
     <div class="score">${M.q.length}/${M.q.length}</div></div>
-    <div class="foot" style="flex-direction:column"><button class="btn" data-a="mnew">پھر سے</button><button class="btn ghost" data-a="home">ہوم</button></div>`;
+    <div class="foot" style="flex-direction:column"><button class="btn" data-a="mnew">Again</button><button class="btn ghost" data-a="home">Home</button></div>`;
     chime();return;
   }
-  const c=M.q[M.i],top=topbar(`حرکت ${M.i+1}/${M.q.length}`,M.i/M.q.length);
+  const c=M.q[M.i],top=topbar(`Move ${M.i+1}/${M.q.length}`,M.i/M.q.length);
   if(c.t==='steps'){
     if(M.st===0){
-      $('#app').innerHTML=`${top}<div class="stage"><div class="hint">کتنے حصے (syllables)؟</div>
-      <button class="speaker" data-a="say" data-t="${c.w[0]}" data-r=".7" aria-label="سنو">${ICON.spkBig}</button>
+      $('#app').innerHTML=`${top}<div class="stage"><div class="hint">How many syllables?</div>
+      <button class="speaker" data-a="say" data-t="${c.w[0]}" data-r=".7" aria-label="Play">${ICON.spkBig}</button>
       <div class="mv-word">${c.w[0]}</div><div class="mv-sub">${esc(c.w[1])} · ${esc(c.w[2])}</div>
       <div class="topts" style="grid-template-columns:repeat(4,1fr)">${[1,2,3,4].map(k=>`<button class="topt ${M.sel!=null?(k===c.n?'good':k===M.sel?'bad':''):''}" style="height:84px;font-size:34px;font-weight:800" data-a="mcount" data-k="${k}" ${M.sel!=null?'disabled':''}>${k}</button>`).join('')}</div>
       <div class="fb"></div></div>
-      <div class="foot"><button class="btn" data-a="mgo" ${M.sel==null?'disabled':''}>چلو</button></div>`;
+      <div class="foot"><button class="btn" data-a="mgo" ${M.sel==null?'disabled':''}>Go</button></div>`;
       if(M.sel==null)setTimeout(()=>speak(c.w[0],.7),150);
     }else{
       $('#app').innerHTML=`${top}<div class="stage"><div class="mv-arrow">${c.d.ar}</div>
-      <div class="mv-word" style="font-size:54px">${c.d.zh}</div><div class="mv-sub">${esc(c.d.py)}</div>
+      <div class="mv-word" style="font-size:clamp(26px,8vw,38px)">${c.d.zh}</div><div class="mv-sub">${esc(c.d.py)}</div>
       <div class="dots">${Array.from({length:c.n},()=>'<i></i>').join('')}</div>
-      <div class="mv-sub">‏<b>${c.w[0]}</b> بولو، پھر ${c.d.en} ${c.n} قدم چلو۔</div></div>
-      <div class="foot"><button class="icon-btn" data-a="mrepeat" aria-label="دوبارہ سنو">${ICON.spk}</button><button class="btn" data-a="mdone">ہو گیا</button></div>`;
+      <div class="mv-sub">Say <b>${c.w[0]}</b>, then take ${c.n} step${c.n>1?'s':''} ${c.d.en}.</div></div>
+      <div class="foot"><button class="icon-btn" data-a="mrepeat" aria-label="Hear again">${ICON.spk}</button><button class="btn" data-a="mdone">Done</button></div>`;
       say(c.w[0],.7).then(()=>sleep(300)).then(()=>{if(V.view==='move'&&V.mv===M&&M.i===M.q.indexOf(c))say(c.d.zh,.75)});
     }
     return;
   }
   // talk
   if(M.st===0){
-    $('#app').innerHTML=`${top}<div class="stage"><button class="speaker" data-a="say" data-t="${c.q[0]}" data-r=".75" aria-label="سنو">${ICON.spkBig}</button>
+    $('#app').innerHTML=`${top}<div class="stage"><button class="speaker" data-a="say" data-t="${c.q[0]}" data-r=".75" aria-label="Play">${ICON.spkBig}</button>
     <div class="mv-word" style="font-size:40px">${c.q[0]}</div><div class="mv-sub">${esc(c.q[1])}<br><span class="mv-en">${esc(c.q[2])}</span></div>
     <div class="picks">${c.o.map((o,i)=>`<button class="pick" data-a="mpick" data-k="${i}"><span class="h" style="font-size:22px">${o[0]}</span><span class="p">${esc(o[1])}</span><span class="e">${esc(o[2])}</span></button>`).join('')}</div></div>`;
     setTimeout(()=>{if(V.view==='move'&&V.mv===M&&M.st===0)speak(c.q[0],.75)},150);
   }else{
-    const o=c.o[M.sel],help=o[2]===IDU[2];
+    const o=c.o[M.sel],help=o[2]==="I don't understand";
     $('#app').innerHTML=`${top}<div class="stage"><div class="mv-sub" style="margin-bottom:4px">${o[0]}</div>
-    <button class="speaker" data-a="say" data-t="${o[3]}" data-r=".75" aria-label="سنو">${ICON.spkBig}</button>
+    <button class="speaker" data-a="say" data-t="${o[3]}" data-r=".75" aria-label="Play">${ICON.spkBig}</button>
     <div class="mv-word" style="font-size:40px">${o[3]}</div><div class="mv-sub">${esc(o[4])}<br><span class="mv-en">${esc(o[5])}</span></div>
-    ${help?`<div class="mv-help">مطلب: ${esc(c.q[2])}</div>`:''}
-    <div class="docue"><b>کرو</b>${esc(o[6])}</div></div>
-    <div class="foot"><button class="btn" data-a="mdone">ہو گیا</button></div>`;
+    ${help?`<div class="mv-help">It means: ${esc(c.q[2])}</div>`:''}
+    <div class="docue"><b>Do it</b>${esc(o[6])}</div></div>
+    <div class="foot"><button class="btn" data-a="mdone">Done</button></div>`;
     say(o[0],.75).then(()=>sleep(250)).then(()=>{if(V.view==='move'&&V.mv===M&&M.st===1)say(o[3],.75)});
   }
 }
@@ -1047,42 +1029,42 @@ function missionNext(){
   else{V.mission=null;V.review=false;S.mission=dkey();S.missions=(S.missions||0)+1;S.moves=(S.moves||0)+1;save();V.view='mission';render();chime()}
 }
 function missionV(){
-  $('#app').innerHTML=`${topbar('مشن',1)}
+  $('#app').innerHTML=`${topbar('Mission',1)}
   <div class="stage top" style="align-items:center;text-align:center"><div class="big-stars" style="margin-top:8px">${[1,2,3].map(()=>`<div class="pop">${star(true,64)}</div>`).join('')}</div>
-  <div class="score" style="font-size:34px">مشن مکمل</div>
-  <div class="mv-sub">آج: ${tmText()}</div></div>
-  <div class="foot" style="flex-direction:column"><button class="btn" data-a="mission">ایک اور دور</button><button class="btn ghost" data-a="home">ہوم</button></div>`;
+  <div class="score" style="font-size:34px">Mission complete</div>
+  <div class="mv-sub">Today: ${tmText()}</div></div>
+  <div class="foot" style="flex-direction:column"><button class="btn" data-a="mission">Another round</button><button class="btn ghost" data-a="home">Home</button></div>`;
 }
 
 /* ---------- backup ---------- */
 function printv(){
-  $('#app').innerHTML=`${topbar('پرنٹ',0)}
+  $('#app').innerHTML=`${topbar('Print',0)}
   <div class="stage"><div class="bk">
-    <div class="hint" style="text-align:center">کاغذ پر آف لائن مشق</div>
-    <a class="btn" href="./english-book.pdf" target="_blank" rel="noopener">مشقی کتاب</a>
-    <a class="btn ghost" href="./english-cards.pdf" target="_blank" rel="noopener">تمام کارڈز</a>
-    <div class="hint" style="text-align:center">گروپ کے مطابق کارڈز</div>
-    <div class="pgrid">${Array.from({length:Math.ceil(DAYS.length/6)},(_,i)=>`<a href="./english-cards-g${i+1}.pdf" target="_blank" rel="noopener">${i+1}</a>`).join('')}</div>
+    <div class="hint" style="text-align:center">Offline practice on paper</div>
+    <a class="btn" href="./urdu-book.pdf" target="_blank" rel="noopener">Practice book</a>
+    <a class="btn ghost" href="./urdu-cards.pdf" target="_blank" rel="noopener">All flashcards</a>
+    <div class="hint" style="text-align:center">Flashcards by group</div>
+    <div class="pgrid">${Array.from({length:Math.ceil(DAYS.length/6)},(_,i)=>`<a href="./urdu-cards-g${i+1}.pdf" target="_blank" rel="noopener">${i+1}</a>`).join('')}</div>
   </div></div>`;
 }
 function backup(){
-  $('#app').innerHTML=`${topbar('بیک اپ',0)}
+  $('#app').innerHTML=`${topbar('Backup',0)}
   <div class="stage"><div class="bk">
-    <div class="hint" style="text-align:center">اپنی پیش رفت محفوظ رکھیں</div>
-    <button class="btn" data-a="bksave">پیش رفت محفوظ کریں</button>
-    <button class="btn ghost" data-a="bkload">پیش رفت بحال کریں</button>
+    <div class="hint" style="text-align:center">Keep your progress safe</div>
+    <button class="btn" data-a="bksave">Save progress</button>
+    <button class="btn ghost" data-a="bkload">Restore progress</button>
     <input type="file" id="bkfile" accept=".json,application/json" hidden>
     <div class="bk-msg" id="bkmsg" role="status"></div>
   </div></div>`;
   $('#bkfile').onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{
     try{const o=JSON.parse(r.result);if(!o||typeof o!=='object'||!o.done||typeof o.done!=='object')throw 0;
-      S=o;if(!S.w)S.w={};save();$('#bkmsg').textContent='بحال ہو گیا۔ خوش آمدید!';chime();setTimeout(()=>go('home'),1200)}
-    catch(x){$('#bkmsg').textContent='یہ فائل بیک اپ نہیں ہے۔'}};r.readAsText(f)};
+      S=o;if(!S.w)S.w={};save();$('#bkmsg').textContent='Restored. Welcome back!';chime();setTimeout(()=>go('home'),1200)}
+    catch(x){$('#bkmsg').textContent='That file is not a backup.'}};r.readAsText(f)};
 }
 function bkSave(){
   const txt=JSON.stringify(S),d=new Date().toISOString().slice(0,10),m=$('#bkmsg');
-  try{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:'application/json'}));a.download='english-rozana-backup-'+d+'.json';document.body.appendChild(a);a.click();a.remove();m.textContent='آپ کے ڈاؤن لوڈز میں محفوظ ہو گئی۔';chime();return}catch(e){}
-  try{navigator.clipboard.writeText(txt);m.textContent='کاپی ہو گیا۔'}catch(e){m.textContent='یہاں محفوظ نہیں ہو سکا۔'}
+  try{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:'application/json'}));a.download='urdu-daily-backup-'+d+'.json';document.body.appendChild(a);a.click();a.remove();m.textContent='Saved to your downloads.';chime();return}catch(e){}
+  try{navigator.clipboard.writeText(txt);m.textContent='Copied.'}catch(e){m.textContent='Could not save here.'}
 }
 
 /* ---------- done ---------- */
@@ -1091,44 +1073,44 @@ function done(){
   if(V.test){
     const by={};V.res.forEach(r=>{const x=by[r.g]=by[r.g]||[0,0];x[1]++;if(r.ok)x[0]++});
     const missed=V.res.filter(r=>!r.ok);
-    $('#app').innerHTML=`${topbar('ٹیسٹ',1)}
+    $('#app').innerHTML=`${topbar('Test',1)}
   <div class="stage top" style="align-items:stretch;text-align:center">
     <div class="big-stars" style="margin-top:8px">${[1,2,3].map(i=>`<div class="pop">${star(sc/n>=[.5,.75,.9][i-1],64)}</div>`).join('')}</div>
     <div class="score">${sc}/${n}</div>
-    ${Object.keys(by).map(g=>`<div class="trow"><span class="tt">گروپ ${g}</span><span class="bar2"><i style="width:${Math.round(by[g][0]/by[g][1]*100)}%"></i></span><span class="n">${by[g][0]}/${by[g][1]}</span></div>`).join('')}
+    ${Object.keys(by).map(g=>`<div class="trow"><span class="tt">Group ${g}</span><span class="bar2"><i style="width:${Math.round(by[g][0]/by[g][1]*100)}%"></i></span><span class="n">${by[g][0]}/${by[g][1]}</span></div>`).join('')}
     ${missed.length?`<div class="miss">${missed.map(r=>`<button data-a="say" data-t="${r.w[0]}" data-r=".7"><b>${r.w[0]}</b><span>${r.w[1]}</span></button>`).join('')}</div>`:''}
   </div>
   <div class="foot" style="flex-direction:column">
-    ${missed.length?`<button class="btn" data-a="start" data-s="review">ان کو دہراؤ</button>`:`<button class="btn" data-a="start" data-s="${V.full?'fulltest':'test'}">دوبارہ ٹیسٹ</button>`}
-    <button class="btn ghost" data-a="home">ہوم</button>
+    ${missed.length?`<button class="btn" data-a="start" data-s="review">Review these</button>`:`<button class="btn" data-a="start" data-s="${V.full?'fulltest':'test'}">Test again</button>`}
+    <button class="btn ghost" data-a="home">Home</button>
   </div>`;
     return;
   }
   if(V.review){
     const ws=[...new Set(V.q.map(q=>q.w[0]))];
-    $('#app').innerHTML=`${topbar('دہرائی',1)}
+    $('#app').innerHTML=`${topbar('Review',1)}
   <div class="stage" style="align-items:center;text-align:center">
     <div class="big-stars">${[1,2,3].map(i=>`<div class="pop">${star(s>=i,72)}</div>`).join('')}</div>
     <div class="score">${sc}/${n}</div>
     <div class="hanzi-row" style="justify-content:center;font-size:30px">${ws.map(w=>`<span>${w}</span>`).join('')}</div>
   </div>
   <div class="foot" style="flex-direction:column">
-    <button class="btn" data-a="start" data-s="review">پھر دہراؤ</button>
-    <button class="btn ghost" data-a="home">ہوم</button>
+    <button class="btn" data-a="start" data-s="review">Review again</button>
+    <button class="btn ghost" data-a="home">Home</button>
   </div>`;
     return;
   }
-  $('#app').innerHTML=`${topbar('مکمل',1)}
+  $('#app').innerHTML=`${topbar('Done',1)}
   <div class="stage" style="align-items:center;text-align:center">
     <div class="big-stars">${[1,2,3].map(i=>`<div class="pop">${star(s>=i,72)}</div>`).join('')}</div>
     <div class="score">${sc}/${n}</div>
     <div class="hanzi-row" style="justify-content:center">${d.w.map(w=>`<span>${w[0]}</span>`).join('')}</div>
   </div>
   <div class="foot" style="flex-direction:column">
-    <button class="btn" data-a="start" data-s="actday">اداکاری کرو</button>
-    <button class="btn ghost" data-a="start" data-s="create">جملے بناؤ</button>
-    ${next?`<button class="btn ghost" data-a="nextday">${next.n%6===1?`گروپ ${Math.ceil(next.n/6)} · `:''}دن ${next.n}</button>`:''}
-    <button class="btn ghost" data-a="home">ہوم</button>
+    <button class="btn" data-a="start" data-s="actday">Act it out</button>
+    <button class="btn ghost" data-a="start" data-s="create">Make phrases</button>
+    ${next?`<button class="btn ghost" data-a="nextday">${next.n%6===1?`Group ${Math.ceil(next.n/6)} · `:''}Day ${next.n}</button>`:''}
+    <button class="btn ghost" data-a="home">Home</button>
   </div>`;
 }
 
@@ -1344,48 +1326,48 @@ const actPool=()=>{const L=learnedDays();return ACTS.filter(a=>L.has(a.d))};
 
 const VPIC={go:'🚶',eat:'🍚',work:'💻',sleep:'😴',study:'📖',drink:'🥤',buy:'🛒',getup:'🛏️',shower:'🚿',brush:'🦷',see:'👀',breakfast:'🥣',lunch:'🥪',dinner:'🍽️'};
 function performCard(){
-  const s=sel(),k=pat().k;let pic='🎭',cue='اداکاری کرو';
+  const s=sel(),k=pat().k;let pic='🎭',cue='Act it out';
   if(k==='do'||k==='want')pic=VPIC[s.what.k]||pic;
   else if(k==='weather')pic=s.wth.k==='hot'?'🥵':s.wth.k==='cold'?'🥶':'🌧️';
   else if(k==='feel')pic={happy:'😄',tired:'🥱',hungry:'😋',thirsty:'🥤'}[s.feel.en]||pic;
   else if(k==='travel')pic={'by car':'🚗','by subway':'🚇','by plane':'✈️','on foot':'🚶'}[s.mode.en]||pic;
-  else if(k==='this'||k==='colour'){pic='👉';cue='اس کی طرف یا اس جیسی چیز کی طرف اشارہ کرو'}
-  else if(k==='date'){pic='🎂';cue='کہو، پھر دوست کو اپنی سالگرہ بتاؤ'}
-  else if(k==='job'){pic='💼';cue='پیشے کی اداکاری کرو'}
-  else if(k==='clock'){pic=VPIC[s.clk.k]||'🕐';cue='کلائی تھپتھپاؤ، پھر اداکاری کرو'}
-  else if(k==='have'){pic=s.num.n<=9?s.num.n+'️⃣':s.num.n===10?'🔟':'🔢';cue='انگلیوں سے دکھاؤ'}
-  else if(k==='where'){pic='📍';cue='اشارہ کرو کہ یہ کہاں ہے'}
-  else if(k==='price'){pic=s.adj.en==='cheap'?'🏷️':s.adj.en==='expensive'?'💰':'😋';cue='چہرے سے دکھاؤ'}
-  else if(k==='order'){pic='🙏';cue='ہاتھ بڑھاؤ اور مانگو'}
-  else if(k==='sorry'){pic='🙇';cue='کہتے ہوئے تھوڑا جھکو'}
-  else if(k==='health'){pic='🤕';cue='چہرے اور ہاتھوں سے دکھاؤ'}
-  else if(k==='direction'){pic={'on the left':'⬅️','on the right':'➡️','in front':'⬆️',behind:'⬇️'}[s.dir.en]||'📍';cue='اس طرف اشارہ کرو'}
+  else if(k==='this'||k==='colour'){pic='👉';cue='Point to it, or to something like it'}
+  else if(k==='date'){pic='🎂';cue='Say it, then tell a friend your birthday'}
+  else if(k==='job'){pic='💼';cue='Act out the job'}
+  else if(k==='clock'){pic=VPIC[s.clk.k]||'🕐';cue='Tap your wrist, then act it out'}
+  else if(k==='have'){pic=s.num.n<=9?s.num.n+'️⃣':s.num.n===10?'🔟':'🔢';cue='Show it with your fingers'}
+  else if(k==='where'){pic='📍';cue='Point to where it is'}
+  else if(k==='price'){pic=s.adj.en==='cheap'?'🏷️':s.adj.en==='expensive'?'💰':'😋';cue='Show it with your face'}
+  else if(k==='order'){pic='🙏';cue='Hold out your hands and ask'}
+  else if(k==='sorry'){pic='🙇';cue='Bow a little as you say it'}
+  else if(k==='health'){pic='🤕';cue='Show it with your face and hands'}
+  else if(k==='direction'){pic={'on the left':'⬅️','on the right':'➡️','in front':'⬆️',behind:'⬇️'}[s.dir.en]||'📍';cue='Point that way'}
   return {zh:crZh(),py:zhTokens().map(t=>t.py).join(' '),en:enSent(),pic,cue};
 }
 function act(){
   const a=V.a,n=a.q.length;
   if(a.i>=n){
-    $('#app').innerHTML=`${topbar('اداکاری',1)}
+    $('#app').innerHTML=`${topbar('Act',1)}
   <div class="stage top" style="align-items:center;text-align:center">
     <div class="big-stars" style="margin-top:8px">${[1,2,3].map(()=>`<div class="pop">${star(true,64)}</div>`).join('')}</div>
     <div class="score">${n}/${n}</div>
     <div class="miss">${a.q.map(c=>`<button data-a="say" data-t="${c.zh.replace(/[！]/g,'')}" data-r=".6"><b style="font-size:20px">${c.zh.replace('！','')}</b><span>${c.pic}</span></button>`).join('')}</div>
   </div>
-  <div class="foot" style="flex-direction:column"><button class="btn" data-a="start" data-s="${a.day?'actday':'act'}">پھر سے</button><button class="btn ghost" data-a="home">ہوم</button></div>`;
+  <div class="foot" style="flex-direction:column"><button class="btn" data-a="start" data-s="${a.day?'actday':'act'}">Again</button><button class="btn ghost" data-a="home">Home</button></div>`;
     return;
   }
   const c=a.q[a.i],reveal=a.shown||a.done,last=a.i===n-1;
-  $('#app').innerHTML=`${topbar(`اداکاری ${a.i+1}/${n}`,a.i/n)}
+  $('#app').innerHTML=`${topbar(`Act ${a.i+1}/${n}`,a.i/n)}
   <div class="stage"><div class="card">
     ${c.cue?`<div class="hint" style="color:var(--muted);font-weight:800;font-size:14px;text-transform:uppercase;letter-spacing:.08em;text-align:center">${c.cue}</div>`:''}
     <div class="act-zh han" ${c.zh.length>8?'style="font-size:clamp(26px,8vw,36px)"':''}>${c.zh}</div>
     <div class="py">${c.py}</div>
     <div class="act-pic" ${reveal?'':'style="opacity:.12"'}>${reveal?c.pic:'?'}</div>
     <div class="sub" style="min-height:44px">${reveal?c.en:''}</div>
-    ${a.done?`<div class="okpill pop">${ICON.check}شاباش!</div>`:''}
-    <div class="say"><button class="chip-btn" data-a="ahear">${ICON.spk}پھر سے</button>${reveal?'':`<button class="chip-btn alt" data-a="ashow">دکھاؤ</button>`}</div>
+    ${a.done?`<div class="okpill pop">${ICON.check}Great!</div>`:''}
+    <div class="say"><button class="chip-btn" data-a="ahear">${ICON.spk}Again</button>${reveal?'':`<button class="chip-btn alt" data-a="ashow">Show me</button>`}</div>
   </div></div>
-  <div class="foot"><button class="btn" data-a="${a.done?'anext':'adone'}">${a.done?(last?'ختم':'اگلا'):'میں نے کر لیا'}</button></div>`;
+  <div class="foot"><button class="btn" data-a="${a.done?'anext':'adone'}">${a.done?(last?'Finish':'Next'):'I did it'}</button></div>`;
 }
 const actSay=()=>{const a=V.a;if(V.view==='act'&&a.q[a.i])speak(a.q[a.i].zh.replace(/[！]/g,''),.6)};
 
@@ -1639,7 +1621,7 @@ function crOptsBase(k){
   if(k==='clk')return WHAT.filter(x=>ok(x)&&['getup','shower','brush','sleep','study','work','breakfast','lunch','dinner'].includes(x.k));
   return [];
 }
-const TITLE={pat:'کیا کہنا ہے؟',who:'کون؟',when:'کب؟',what:'کیا؟',obj:'کون سا؟',where:'کہاں؟',wth:'کیسا؟',dem:'یہ یا وہ؟',own:'کس کا؟',noun:'کیا؟',num:'کتنے؟',col:'کون سا رنگ؟',mode:'کیسے؟',adj:'کیسا ہے؟',feel:'کیسا؟',dir:'کس طرف؟',hour:'کون سا گھنٹہ؟',job:'کون سا پیشہ؟',month:'کون سا مہینہ؟',dayn:'کون سی تاریخ؟',half:'پورا یا ساڑھے؟',clk:'کیا کرنا؟',body:'کہاں؟'};
+const TITLE={pat:'Say what?',who:'Who?',when:'When?',what:'What?',obj:'Which?',where:'Where?',wth:'How?',dem:'This or that?',own:'Whose?',noun:'What?',num:'How many?',col:'Which colour?',mode:'How?',adj:'How is it?',feel:'How?',dir:'Which way?',hour:'What hour?',job:'Which job?',month:'Which month?',dayn:'Which date?',half:'Sharp or half?',clk:'Doing what?',body:'Where?'};
 function zhTokens(){
   const s=sel(),k=pat().k,S=sub();
   if(k==='do'||k==='want'){
@@ -1676,8 +1658,8 @@ function zhTokens(){
   if(k==='this')return [s.dem,T('是','shì'),s.own,s.noun];
   return [...subTok(S),T('有','yǒu'),s.num,T('个','gè'),s.noun];
 }
-const crZh=()=>esCap(esSent())+'.';
-function enSentEn(){
+const crZh=()=>urS().u;
+function enSent(){
   const s=sel(),k=pat().k,S=sub();
   if(k==='do'||k==='want'){
     const W=s.when||{t:'pres',en:''},Vb=s.what,v=VERB[Vb.k];
@@ -1760,18 +1742,18 @@ function questionL(){
 }
 function create(){
   const st=crSteps(),c=V.cr,done=c.i>=st.length;
-  const chosen=st.slice(0,Math.min(c.i,st.length)).filter(k=>k!=='pat').map(k=>{const j=st.indexOf(k);return `<button class="cpill" data-a="crback" data-j="${j}" aria-label="بدلو">${c.sel[k].eh||c.sel[k].h}</button>`}).join('');
+  const chosen=st.slice(0,Math.min(c.i,st.length)).filter(k=>k!=='pat').map(k=>{const j=st.indexOf(k);return `<button class="cpill" data-a="crback" data-j="${j}" aria-label="Change">${c.sel[k].eh||c.sel[k].h}</button>`}).join('');
   let body,foot='';
   if(!done){
     const k=st[c.i],opts=crOpts(k);
-    body=`<div class="qtitle">${TITLE[k]}</div><div class="picks ${opts.length===3?'one':''}">${opts.map((o,i)=>`<button class="pick ${c.sel[k]===o?'sel':''}" data-a="crpick" data-k="${i}"><span class="h">${o.eh||o.h}</span><span class="p">${o.ep||o.py}</span><span class="e">${o.mu||o.lab||o.en}</span></button>`).join('')}</div>`;
+    body=`<div class="qtitle">${TITLE[k]}</div><div class="picks ${opts.length===3?'one':''}">${opts.map((o,i)=>`<button class="pick ${c.sel[k]===o?'sel':''}" data-a="crpick" data-k="${i}"><span class="h">${o.eh||o.h}</span><span class="p">${o.ep||o.py}</span><span class="e">${o.lab||o.en}</span></button>`).join('')}</div>`;
   }else{
     body=`<div class="sent">${zhTokens().map(t=>`<div class="tok"><span class="h">${t.h}</span><span class="p">${t.py}</span></div>`).join('')}</div>
       <div class="sub">${enSent()}</div>
-      <div class="tctl"><button class="chip-btn" data-a="crsay">${ICON.spk}سنو</button></div>`;
-    foot=`<div class="foot" style="flex-direction:column"><button class="btn" data-a="dlg">ڈائیلاگ میں</button><button class="btn ghost" data-a="perf">اداکاری کرو</button><button class="btn ghost" data-a="crnew">نیا جملہ</button></div>`;
+      <div class="tctl"><button class="chip-btn" data-a="crsay">${ICON.spk}Hear it</button></div>`;
+    foot=`<div class="foot" style="flex-direction:column"><button class="btn" data-a="dlg">Use it in a dialogue</button><button class="btn ghost" data-a="perf">Act it out</button><button class="btn ghost" data-a="crnew">New sentence</button></div>`;
   }
-  $('#app').innerHTML=`${topbar('جملہ',done?1:c.i/st.length)}
+  $('#app').innerHTML=`${topbar('Phrase',done?1:c.i/st.length)}
   <div class="stage ${done?'':'top'}"><div class="chosen">${chosen}</div>${body}</div>${foot}`;
   window.scrollTo(0,0);
 }
@@ -1787,7 +1769,7 @@ function crPick(i){
 
 /* ---------- dialogue overlay ---------- */
 function dlgLines(){
-  const gr=V.day===5?{h:'早上好',py:'zǎoshang hǎo',en:'صبح بخیر'}:{h:'你好',py:'nǐ hǎo',en:'سلام'};
+  const gr=V.day===5?{h:'早上好',py:'zǎoshang hǎo',en:'Good morning'}:{h:'你好',py:'nǐ hǎo',en:'Hello'};
   const q=question();
   const L={
     q:{zh:`${gr.h}！${q.zh}`,py:`${gr.py}! ${q.py}`,en:`${gr.en}! ${q.en}`},
@@ -1820,10 +1802,10 @@ function dlgRender(){
   let chat=bub('q',L)+bub('a',L);
   if(s>=1){chat+=bub('g',L)+(L.r?bub('r',L):'')+(L.r2?bub('r2',L):'')+`<div class="cheer"><div class="big-stars">${[1,2,3].map(()=>`<div class="pop">${star(true,44)}</div>`).join('')}</div></div>`+bub('c',L)+(L.b?bub('b',L)+bub('b2',L):'')}
   const btns=s===0
-   ?`<button class="btn ghost" data-a="dsay" data-w="a">${ICON.spk}میرا جواب سنو</button>${recUI()}<button class="btn" data-a="dsaid">${ICON.check}میں نے بلند آواز سے کہا</button>`
-   :`<button class="btn ghost" data-a="dreplay">دوبارہ سنو</button><button class="btn" data-a="dnew">نیا جملہ</button>`;
-  $('#ov').innerHTML=`<div class="sheet" role="dialog" aria-label="ڈائیلاگ">
-    <div class="who"><div class="ava">F</div><div style="flex:1">Friend · دوست</div><button class="icon-btn" data-a="dclose" aria-label="بند کریں">${ICON.x}</button></div>
+   ?`<button class="btn ghost" data-a="dsay" data-w="a">${ICON.spk}Hear my answer</button>${recUI()}<button class="btn" data-a="dsaid">${ICON.check}I said it out loud</button>`
+   :`<button class="btn ghost" data-a="dreplay">Replay</button><button class="btn" data-a="dnew">New sentence</button>`;
+  $('#ov').innerHTML=`<div class="sheet" role="dialog" aria-label="Dialogue">
+    <div class="who"><div class="ava">د</div><div style="flex:1">دوست · Friend</div><button class="icon-btn" data-a="dclose" aria-label="Close">${ICON.x}</button></div>
     <div class="chat" id="chat">${chat}</div>
     <div class="foot" style="flex-direction:column">${btns}</div></div>`;
   const c=$('#chat');if(c)c.scrollTop=c.scrollHeight;
@@ -1831,10 +1813,10 @@ function dlgRender(){
 function dlgClose(){V.rid++;recReset();V.d=null;try{speechSynthesis.cancel()}catch(e){}const o=$('#ov');o.hidden=true;o.innerHTML=''}
 let REC={state:'idle',url:null,mr:null,chunks:[],audio:null};
 function recUI(){
-  if(REC.state==='rec')return `<button class="btn ghost recording" data-a="drec">${ICON.stop}روکو</button>`;
-  if(REC.state==='ready')return `<div class="recrow"><button class="btn ghost" data-a="dmine">${ICON.spk}میرا</button><button class="btn ghost" data-a="drec">${ICON.mic}پھر سے</button></div>`;
-  if(REC.state==='err')return `<button class="btn ghost" data-a="drec">${ICON.mic}مائیک دستیاب نہیں۔ دوبارہ کوشش کریں</button>`;
-  return `<button class="btn ghost" data-a="drec">${ICON.mic}ریکارڈ کرو</button>`;
+  if(REC.state==='rec')return `<button class="btn ghost recording" data-a="drec">${ICON.stop}Stop</button>`;
+  if(REC.state==='ready')return `<div class="recrow"><button class="btn ghost" data-a="dmine">${ICON.spk}Mine</button><button class="btn ghost" data-a="drec">${ICON.mic}Again</button></div>`;
+  if(REC.state==='err')return `<button class="btn ghost" data-a="drec">${ICON.mic}Mic not available. Try again</button>`;
+  return `<button class="btn ghost" data-a="drec">${ICON.mic}Record myself</button>`;
 }
 function recReset(){
   try{if(REC.mr&&REC.mr.state==='recording')REC.mr.stop()}catch(e){}
@@ -1988,74 +1970,53 @@ document.addEventListener('click',e=>{
   else if(a==='nextday'){V.day=Math.min(V.day+1,DAYS.length);startStep('learn')}
 });
 window.addEventListener('resize',()=>{if(V.view==='trace'&&!inked)setupCanvas()});
-/* ===== English target: respelling in Urdu script (Urdu learner) ===== */
-const ES_LANG='en-US';
-const ENW=['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty','twenty-one','twenty-two','twenty-three','twenty-four','twenty-five','twenty-six','twenty-seven','twenty-eight','twenty-nine','thirty','thirty-one'];
-const esNum=n=>ENW[n];
-const ENR={};
-`a=اے after=آف-ٹر afternoon=آف-ٹر-نون airport=ایئر-پورٹ all=آل also=آل-سو am=ایم and=اینڈ april=اے-پرل are=آر around=ا-راؤنڈ at=ایٹ ate=اےٹ august=آ-گسٹ autumn=آ-ٹم back=بیک backward=بیک-ورڈ bag=بیگ bank=بینک bathroom=باتھ-روم be=بی bed=بیڈ before=بی-فور behind=بی-ہائنڈ belly=بے-لی big=بگ birthday=برتھ-ڈے black=بلیک blue=بلو book=بُک bought=بوٹ breakfast=بریک-فاسٹ brother=برَ-دَر brothers=برَ-درز brush=برش brushed=برشٹ brushes=برَ-شِز brushing=برَ-شنگ buy=بائی buying=بائی-انگ buys=بائیز by=بائی call=کال car=کار chair=چیئر cheap=چیپ chef=شیف chefs=شیفس child=چائلڈ children=چِل-ڈرن clap=کلیپ awesome=آ-سم clean=کلین close=کلوز closed=کلوزڈ closes=کلو-زِز closing=کلو-زنگ clothes=کلوز cold=کولڈ computer=کَم-پیو-ٹر correct=کَ-ریکٹ dad=ڈیڈ dad's=ڈیڈز date=ڈیٹ day=ڈے december=ڈی-سیم-بر delicious=ڈی-لی-شس did=ڈِڈ didn't=ڈِ-ڈنٹ dinner=ڈِ-نر dish=ڈِش dishes=ڈِ-شِز do=ڈو doctor=ڈاک-ٹر doctors=ڈاک-ٹرز does=ڈَز doing=ڈو-انگ don't=ڈونٹ door=ڈور down=ڈاؤن drank=ڈرینک drink=ڈرنک drinking=ڈرِن-کنگ drinks=ڈرنکس driver=ڈرائی-ور drivers=ڈرائی-ورز eat=ایٹ eating=ای-ٹنگ eats=ایٹس eight=اےٹ eighteen=اے-ٹین eighteenth=اے-ٹینتھ eighth=اےٹھ eleven=اِ-لے-ون eleventh=اِ-لے-ونتھ evening=ایو-نِنگ every=ایو-ری expensive=اِک-سپین-سِو ears=اِرز else=ایلس eyes=آئیز fingers=فِن-گرز found=فاؤنڈ hair=ہیئر knee=نی leg=لیگ mouth=ماؤتھ nose=نوز shoulder=شول-ڈر something=سَم-تھنگ family=فَ-مِ-لی february=فے-برو-ای-ری fifteen=فِف-ٹین fifteenth=فِف-ٹینتھ fifth=فِفتھ fifty=فِف-ٹی find=فائنڈ fine=فائن first=فرسٹ five=فائیو floor=فلور food=فوڈ foot=فُٹ for=فور forty=فور-ٹی forward=فور-ورڈ four=فور fourteenth=فور-ٹینتھ fourth=فورتھ friday=فرائی-ڈے friend=فرینڈ friend's=فرینڈز friends=فرینڈز front=فرنٹ fruit=فروٹ get=گیٹ gets=گیٹس getting=گے-ٹنگ give=گِو go=گو goes=گوز going=گو-انگ good=گُڈ goodbye=گُڈ-بائی got=گاٹ grandma=گرینڈ-ما grandmas=گرینڈ-ماز grandpa=گرینڈ-پا grandpas=گرینڈ-پاز great=گریٹ green=گرین had=ہیڈ half=ہاف hand=ہینڈ hands=ہینڈز happy=ہے-پی has=ہیز hat=ہیٹ have=ہیو having=ہے-وِنگ he=ہی head=ہیڈ hello=ہَ-لو her=ہر here=ہِیر him=ہِم his=ہِز home=ہوم hospital=ہاس-پِ-ٹل hot=ہاٹ hour=آ-ور how=ہاؤ hundred=ہَن-ڈرڈ hungry=ہَن-گری hurt=ہرٹ hurts=ہرٹس i=آئی i'm=آئیم in=اِن is=اِز it=اِٹ it's=اِٹس january=جَن-یُو-اے-ری jump=جمپ july=جُو-لائی june=جون know=نو left=لیفٹ let's=لیٹس like=لائک little=لِ-ٹل look=لُک lunch=لنچ many=مے-نی march=مارچ may=مے me=می medicine=می-ڈی-سن minute=مِ-نِٹ mom=مام mom's=مامز monday=مَن-ڈے money=مَ-نی month=منتھ morning=مور-ننگ much=مچ my=مائی need=نیڈ new=نیو nine=نائن nineteen=نائن-ٹین nineteenth=نائن-ٹینتھ ninth=نائنتھ no=نو noon=نون not=ناٹ november=نو-ویم-بر now=ناؤ nurse=نرس nurses=نر-سِز o'clock=اَ-کلاک october=آک-ٹو-بر office=آ-فِس officer=آ-فِ-سر officers=آ-فِ-سرز ok=او-کے old=اولڈ older=اول-ڈر on=آن one=ون open=او-پن opened=او-پنڈ opening=او-پَ-ننگ opens=او-پنز our=آور over=او-ور park=پارک past=پاسٹ pen=پین phone=فون plane=پلین please=پلیز point=پوائنٹ police=پَ-لیس problem=پراب-لم put=پُٹ rain=رین rained=رینڈ raining=رے-ننگ read=ریڈ reading=ری-ڈنگ reads=ریڈز red=ریڈ rest=ریسٹ restaurant=ریس-ٹَ-رنٹ right=رائٹ school=اسکول second=سے-کنڈ see=سی september=سِپ-ٹیم-بر seven=سے-ون seventeenth=سے-ون-ٹینتھ seventh=سے-ونتھ she=شی shoe=شُو shoes=شُوز show=شو shower=شا-ور showered=شا-ورڈ showering=شا-و-رنگ showers=شا-ورز sick=سِک sister=سِس-ٹر sisters=سِس-ٹرز sit=سِٹ six=سِکس sixteenth=سِکس-ٹینتھ sixth=سِکسٹھ sleep=سلیپ sleeping=سلی-پنگ sleeps=سلیپس slept=سلیپٹ small=سمال smile=سمائل some=سَم sorry=سا-ری spring=سپرنگ stand=سٹینڈ standing=سٹین-ڈنگ station=سٹے-شن stop=سٹاپ store=سٹور student=سٹیو-ڈنٹ students=سٹیو-ڈنٹس studied=سٹَ-ڈِڈ studies=سٹَ-ڈِز study=سٹَ-ڈی studying=سٹَ-ڈی-انگ subway=سب-وے summer=سَ-مر supermarket=سُو-پر-مار-کِٹ table=ٹے-بل take=ٹیک takes=ٹیکس taking=ٹے-کنگ tea=ٹی teacher=ٹی-چر teachers=ٹی-چرز teeth=ٹیتھ ten=ٹین tenth=ٹینتھ thank=تھینک that=دیٹ the=دَ their=دیئر them=دیم there=دیئر these=دیز they=دے third=تھرڈ thirsty=تھرس-ٹی thirteen=تھر-ٹین thirteenth=تھر-ٹینتھ thirtieth=تھر-ٹی-اتھ thirty=تھر-ٹی this=دِس those=دوز three=تھری time=ٹائم tired=ٹائی-رڈ to=ٹو today=ٹو-ڈے tomorrow=ٹو-ما-رو too=ٹو took=ٹُک touch=ٹچ twelfth=ٹویلفتھ twelve=ٹویلو twentieth=ٹوین-ٹی-اتھ twenty=ٹوین-ٹی two=ٹو understand=اَن-ڈر-سٹینڈ up=اَپ vegetables=ویج-ٹَ-ٹَ-بلز very=وے-ری walk=واک want=وانٹ wants=وانٹس was=واز wash=واش water=وا-ٹر we=وی weather=وے-در weekend=ویک-اینڈ welcome=ویل-کم went=وینٹ were=ور what=واٹ when=وین where=وئیر who=ہو whose=ہوز why=وائی will=وِل window=وِن-ڈو winter=وِن-ٹر with=وِد won't=وونٹ work=ورک worked=ورکڈ working=ور-کنگ works=ورکس would=وُڈ wrong=رانگ year=ییر yellow=یے-لو yes=یس yesterday=یس-ٹر-ڈے you=یو you're=یور younger=یَن-گر your=یور ship=شِپ sheep=شیپ live=لِو leave=لیو seat=سیٹ bit=بِٹ beat=بیٹ thin=تھِن tin=ٹِن think=تھِنک sink=سِنک tree=ٹری air=ایئر heat=ہیٹ`.split(/\s+/).forEach(p=>{const i=p.indexOf('=');ENR[p.slice(0,i)]=p.slice(i+1)});
-const ENCH={};
-`afternoon=af-ter-noon airport=air-port also=al-so april=a-pril autumn=au-tumn backward=back-ward bathroom=bath-room before=be-fore behind=be-hind belly=bel-ly birthday=birth-day breakfast=break-fast brother=broth-er children=chil-dren computer=com-put-er correct=cor-rect delicious=de-li-cious dinner=din-ner doctor=doc-tor driver=dri-ver eleven=e-lev-en evening=eve-ning every=ev-ery expensive=ex-pen-sive family=fam-i-ly february=feb-ru-ary friday=fri-day goodbye=good-bye grandma=grand-ma grandpa=grand-pa happy=hap-py hello=hel-lo hospital=hos-pi-tal hundred=hun-dred hungry=hun-gry january=jan-u-ary medicine=med-i-cine minute=min-ute monday=mon-day money=mon-ey morning=morn-ing nineteen=nine-teen office=of-fice officer=of-fi-cer open=o-pen problem=prob-lem restaurant=res-tau-rant second=sec-ond seven=sev-en shower=show-er sister=sis-ter sorry=sor-ry station=sta-tion student=stu-dent study=stud-y subway=sub-way summer=sum-mer supermarket=su-per-mar-ket table=ta-ble teacher=teach-er thirsty=thirst-y thirteen=thir-teen thirty=thir-ty today=to-day tomorrow=to-mor-row twenty=twen-ty understand=un-der-stand vegetables=veg-e-ta-bles very=ve-ry water=wa-ter weather=weath-er weekend=week-end welcome=wel-come window=win-dow winter=win-ter yellow=yel-low yesterday=yes-ter-day eighteen=eigh-teen fifteen=fif-teen fifty=fif-ty forty=for-ty older=old-er younger=young-er forward=for-ward little=lit-tle many=ma-ny police=po-lice o'clock=o'-clock`.split(/\s+/).forEach(p=>{const i=p.indexOf('=');if(i>0)ENCH[p.slice(0,i)]=p.slice(i+1)});
-/* syllables of a respelled word (array); compounds like twenty-one are concatenated */
-function esRespellSyl(w){
-  const k=w.toLowerCase().replace(/’/g,"'");
-  if(ENR[k])return ENR[k].split('-');
-  if(k.includes('-')&&!/^-|-$/.test(k))return k.split('-').flatMap(esRespellSyl);
-  return [k];
+/* ===== Urdu target core: registry, roman lookup, speech ===== */
+const ES_LANG='ur-PK';
+const URR=new Map();
+const urP=s=>{const i=s.indexOf('|');return [s.slice(0,i),s.slice(i+1)]};
+function urReg(u,r){
+  if(!u)return;
+  if(!URR.has(u))URR.set(u,r);
+  const a=u.split(' '),b=r.replace(/-/g,' ').split(' ');
+  const h=r.split(' ');
+  if(a.length>1&&a.length===h.length)a.forEach((w,i)=>{const k=w.replace(/[!؟?۔،,.]/g,'');if(k&&!URR.has(k))URR.set(k,h[i])});
 }
-function esRespellWord(w){
-  const k=w.toLowerCase().replace(/’/g,"'");
-  if(ENR[k])return ENR[k].replace(/-/g,'');
-  if(k.includes('-')&&!/^-|-$/.test(k))return k.split('-').map(esRespellWord).join(' ');
-  return k;
+const U=s=>{const [u,r]=urP(s);urReg(u.replace(/[!؟?۔،]+$/,''),r.replace(/[!?.,]+$/,''));urReg(u,r);return u};
+const Uw=s=>{const [u,r]=urP(s);return [u,r]};
+const _esReW=t=>String(t).replace(/[!؟?۔،.,;:"“”]/g,' ').trim().split(/\s+/).filter(Boolean).map(w=>URR.get(w)||URR.get(w.replace(/-/g,''))||'');
+const esRe=t=>{const a=_esReW(t);return a.length>1?a.join(' ').replace(/-/g,'').replace(/\s+/g,' ').trim():(a[0]||'')};
+const esCap=s=>s;
+const esSylN=t=>esRe(t).split(/[\s-]+/).filter(Boolean).length;
+const urPlain=r=>r.replace(/-/g,'');
+/* roman -> Devanagari so a Hindi voice can read it when no Urdu voice exists */
+const DV_C={chh:'छ',kh:'ख',gh:'घ',ch:'च',sh:'श',jh:'झ',th:'थ',dh:'ध',ph:'फ',bh:'भ',zh:'झ',k:'क',g:'ग',j:'ज',t:'त',d:'द',p:'प',b:'ब',z:'ज़',f:'फ़',r:'र',l:'ल',m:'म',n:'न',s:'स',h:'ह',v:'व',w:'व',y:'य',q:'क़',x:'क्स'};
+const DV_V={aa:['आ','ा'],ee:['ई','ी'],oo:['ऊ','ू'],ai:['ऐ','ै'],au:['औ','ौ'],a:['अ',''],i:['इ','ि'],u:['उ','ु'],e:['ए','े'],o:['ओ','ो']};
+function devan(rom){
+  return rom.toLowerCase().split(/\s+/).map(w=>{
+    let out='',i=0,prevC=false;
+    while(i<w.length){
+      let m=null;
+      for(const L of [3,2,1]){const s=w.substr(i,L);if(DV_C[s]){m=[s,DV_C[s]];break}}
+      const vs=['aa','ee','oo','ai','au','a','i','u','e','o'];
+      const v=m?null:vs.find(x=>w.startsWith(x,i));
+      if(m&&!(m[0]==='n'&&i>0&&/[aeiou]$/.test(w.slice(0,i))&&(i===w.length-1||!/[aeiou]/.test(w[i+1])))){
+        if(prevC)out+='';
+        out+=m[1];prevC=true;i+=m[0].length;continue}
+      if(m){out+='ं';i++;prevC=false;continue}
+      if(v){out+=prevC?DV_V[v][1]:DV_V[v][0];prevC=false;i+=v.length;continue}
+      i++;
+    }
+    return out;
+  }).join(' ');
 }
-function esWordSyl(w){
-  const k=w.toLowerCase();const c=ENCH[k];
-  if(c){const parts=c.split('-');if(parts.length===(ENR[k]||'').split('-').length)return parts}
-  if(k.includes('-')&&!/^-|-$/.test(k)){return w.split('-').flatMap((p,i,a)=>{const x=esWordSyl(p);if(i<a.length-1)x[x.length-1]+='-';return x})}
-  return [w];
+let _urV=null;
+function urHasVoice(){try{const v=speechSynthesis.getVoices();if(v.length)_urV=v.some(x=>/^ur/i.test(x.lang))}catch(e){}return !!_urV}
+function urText(t){
+  if(urHasVoice())return t;
+  const r=esRe(t);return r?devan(r):t;
 }
-const esRe=t=>String(t).replace(/[¿¡?!.,;:"“”«»]/g,' ').trim().split(/\s+/).filter(Boolean).map(esRespellWord).join(' ');
-const esSylN=t=>String(t).replace(/[!?.,]/g,' ').split(/\s+/).filter(Boolean).reduce((n,w)=>n+esRespellSyl(w).length,0);
-
-const ES_WORDS=[
-['I','you','my','your'],['he','she','his','her'],['we','you all','they','them'],['this','that','here','there'],
-['hello','good morning','thank you',"you're welcome"],['sorry','no problem','goodbye','friend'],['yesterday','today','tomorrow','now'],['go','eat','work','in'],
-['home','office','restaurant','store'],['one','two','three','four'],['water','tea','food','vegetables'],['mom','dad','child','family'],
-['red','blue','green','yellow'],['head','hand','foot','eyes'],['get up','take a shower','brush teeth','sleep'],['weather','rain','hot','cold'],
-['what','who','where','why'],['drink','buy','study','see'],['money','how much','expensive','cheap'],['by car','by subway','by plane','on foot'],
-['I want','I need','please','delicious'],['morning','noon','afternoon','evening'],['Monday','Friday','weekend','every day'],['happy','tired','hungry','thirsty'],
-['left','right','front','back'],['doctor','medicine','hurts','sick'],['clothes','shoes','hat','bag'],['door','window','table','chair'],
-['phone','computer','book','pen'],['stand up','sit down','open','close'],['five','six','seven','eight'],['nine','ten','eleven','twelve'],
-['what time',"o'clock",'half past','hour'],['breakfast','lunch','dinner','fruit'],['older brother','older sister','younger brother','younger sister'],['grandpa','grandma','teacher','student'],
-['school','park','hospital','supermarket'],['bank','station','airport','bathroom'],['nurse','chef','driver','police officer'],['month','date','year','birthday'],
-['spring','summer','autumn','winter'],['yes','no','correct',"I don't have"],['thirteen','fifteen','eighteen','nineteen'],['twenty','thirty','forty','fifty'],
-['twenty-one','twenty-five','thirty-one','one hundred'],['minute','hour','before','after'],['big','small','new','old'],['and','also','very','all']];
-const ES_ACTS=['Thirteen!','Fifteen!','Eighteen!','Nineteen!','Twenty!','Thirty!','Forty!','Fifty!','Twenty-one!','Twenty-five!','Thirty-one!','One hundred!','One minute!','One hour!','Before!','After!','Big!','Small!','New!','Old!','And!','Also!','Very!','All!','School!','The park!','The hospital!','The supermarket!','The bank!','The station!','The airport!','The bathroom!','Nurse!','Chef!','Driver!','Police officer!','Month!','Date!','Year!','Birthday!','Spring!','Summer!','Autumn!','Winter!','Yes!','No!','Correct!',"I don't have!",'Five!','Six!','Seven!','Eight!','Nine!','Ten!','Eleven!','Twelve!','What time is it?',"O'clock!",'Half past!','Look at the time!','Time for breakfast!','Time for lunch!','Time for dinner!','Eat some fruit!','Older brother!','Older sister!','Younger brother!','Younger sister!','Grandpa!','Grandma!','Teacher!','Student!','Left!','Right!','In front!','Behind!','It hurts!','My head hurts!','Take the medicine!','Go to the doctor!','Touch your shoe!','Touch your hat!','Touch your clothes!','Take the bag!','Touch the door!','Point to the window!','Touch the table!','Touch the chair!','Take the phone!','Point to the computer!','Take a book!','Take the pen!','Stand up!','Sit down!','Open the door!','Close the door!','He!','She!','They!','Friend!','Yesterday!','Today!','Tomorrow!','Now!',"Let's go!","I'm here!",'Home!','To the office!','To the restaurant!','To the store!','Water!','Tea!','Food!','Vegetables!','Mom!','Dad!','Child!','Family!','Red!','Blue!','Green!','Yellow!','What?','Who?','Where?','Why?','Please!','Delicious!','I want water!','Morning!','Noon!','Afternoon!','Evening!','Monday!','Friday!','Weekend!','Every day!','Me!','You!','We clap!','Here!','There!','Hello!','Thank you!','Goodbye!','Sorry!','Work!','Eat!','One!','Two!','Three!','Four!','Touch your head!','Touch your hand!','Touch your foot!','Touch your eyes!','Get up!','Brush your teeth!','Take a shower!','Time for bed!','Hot!','Cold!','Drink water!','Buy some tea!','Study!','Look!','Expensive!','Cheap!','Walk!','By car!','By plane!','Sit down, please!','Happy!','Tired!','Hungry!','Thirsty!'];
-const ES_MT=[
- {q:'Where are you?',o:[['I am here','Good! I am here too.'],["I don't know","It's OK, look around!"],["I don't understand","It's OK! Where are you?"]]},
- {q:'Are you here?',o:[['I am here','Good! Go over there!'],['I am not here','Where are you?'],["I don't know","It's OK, look around!"]]},
- {q:'Where is your phone?',o:[['It is here','Good! Show me!'],["I don't know","It's OK, go and find it!"],["I don't understand","It's OK! Phone!"]]},
- {q:'Where is your mom?',o:[['She is at home','Good! Go home!'],["I don't know","It's OK, call her!"],["I don't understand","It's OK! Mom!"]]},
- {q:'Where is your money?',o:[['In my bag','Good! Look in your bag!'],["I don't know","It's OK, go and find it!"],["I don't understand","It's OK! Money!"]]},
- {q:'Where is your book?',o:[['It is here','Good! Open the book!'],["I don't know","It's OK, go and find it!"],["I don't understand","It's OK! Book!"]]},
- {q:'Do you want water?',o:[['Yes, I do','Good! Drink water!'],["No, I don't",'No problem!'],["I don't understand",'Water! Drink!']]},
- {q:'Time to eat!',o:[['OK','Great! Eat!'],["I'm not hungry","It's OK! Water?"],["I don't understand",'Eat!']]},
- {q:'Wash the dishes, please!',o:[['OK','Thank you!'],["I don't want to",'Please! Please!'],["I don't understand",'Wash the dishes!']]},
- {q:'Clean the floor, please!',o:[['OK','Thank you!'],["I don't want to",'Please! Please!'],["I don't understand",'Clean the floor!']]},
- {q:'Stop!',o:[['OK','Very good! Sit down!'],["I don't want to",'Stop! Please!'],["I don't understand",'Stand up!']]},
- {q:'Are you tired?',o:[['Yes, I am tired','Sit down and rest!'],["No, I am not tired",'Great! Jump!'],["I don't know","It's OK! Stand up!"]]},
- {q:'Are you cold?',o:[['Yes, I am cold','Put on some clothes!'],["No, I am not cold",'Great!'],["I don't know",'Touch your hands!']]},
- {q:'Are you hungry?',o:[['Yes, I am hungry',"Let's eat!"],["No, I am not hungry",'Great!'],["I don't know",'Touch your belly!']]},
- {q:'Are you thirsty?',o:[['Yes, I am thirsty','Drink water!'],["No, I am not thirsty",'OK!'],["I don't know",'Drink a little water!']]},
- {q:'Open the door, please!',o:[['OK','Thank you!'],["I don't want to",'Please! Please!'],["I don't understand",'Open the door!']]},
- {q:'Close the window, please!',o:[['OK','Thank you!'],["I don't want to",'Please! Please!'],["I don't understand",'Close the window!']]},
- {q:'Sit down, please!',o:[['OK','Thank you!'],["I don't want to","Standing is fine too!"],["I don't understand",'Sit down!']]},
- {q:'Are you happy?',o:[['Yes, I am happy','Great! Smile!'],["No, I am not happy","It's OK! Jump!"],["I don't know",'Touch your head!']]}];
-const ES_MDIRS=['Walk forward!','Walk backward!','Walk to the left!','Walk to the right!'];
-const ES_BODY=[['head','your head',0],['hand','your hand',0],['foot','your foot',0],['eyes','your eyes',1],['nose','your nose',0],['mouth','your mouth',0],['ears','your ears',1],['belly','your belly',0],['leg','your leg',0],['shoulder','your shoulder',0],['knee','your knee',0],['teeth','your teeth',1],['hair','your hair',0],['fingers','your fingers',1]];
-const ES_HUNT=[['book','a book'],['pen','a pen'],['phone','a phone'],['bag','a bag'],['shoe','a shoe'],['hat','a hat'],['clothes','clothes'],['water','water'],['money','money'],['chair','a chair'],['table','a table'],['door','a door'],['window','a window'],['tea','tea']];
-const ES_COLS=['red','blue','green','yellow'];
+function urLang(){return urHasVoice()?'ur-PK':'hi-IN'}
+try{speechSynthesis.getVoices();speechSynthesis.addEventListener&&speechSynthesis.addEventListener('voiceschanged',()=>{_urV=null;urHasVoice()})}catch(e){}
 
 /* ===== Urdu lexicon: 'urdu|roman' pairs ===== */
 const UR_LANG='ur-PK';
@@ -2145,307 +2106,6 @@ const UR_COLS=['لال|laal','نیلا|nee-laa','ہرا|ha-raa','پیلا|pee-la
 /* body: [bare, 'your head' (nominative), 'your head' (touch, object form), plural?] */
 const UR_BODY=[['سر|sar','آپ کا سر|aap kaa sar','اپنے سر کو|ap-ne sar ko',0],['ہاتھ|haath','آپ کا ہاتھ|aap kaa haath','اپنے ہاتھ کو|ap-ne haath ko',0],['پاؤں|paa-on','آپ کا پاؤں|aap kaa paa-on','اپنے پاؤں کو|ap-ne paa-on ko',0],['آنکھیں|aan-khein','آپ کی آنکھیں|aap kee aan-khein','اپنی آنکھوں کو|ap-nee aan-khon ko',1],['ناک|naak','آپ کی ناک|aap kee naak','اپنی ناک کو|ap-nee naak ko',0],['منہ|munh','آپ کا منہ|aap kaa munh','اپنے منہ کو|ap-ne munh ko',0],['کان|kaan','آپ کے کان|aap ke kaan','اپنے کانوں کو|ap-ne kaa-non ko',1],['پیٹ|pet','آپ کا پیٹ|aap kaa pet','اپنے پیٹ کو|ap-ne pet ko',0],['ٹانگ|taang','آپ کی ٹانگ|aap kee taang','اپنی ٹانگ کو|ap-nee taang ko',0],['کندھا|kan-dhaa','آپ کا کندھا|aap kaa kan-dhaa','اپنے کندھے کو|ap-ne kan-dhe ko',0],['گھٹنا|ghut-naa','آپ کا گھٹنا|aap kaa ghut-naa','اپنے گھٹنے کو|ap-ne ghut-ne ko',0],['دانت|daant','آپ کے دانت|aap ke daant','اپنے دانتوں کو|ap-ne daan-ton ko',1],['بال|baal','آپ کے بال|aap ke baal','اپنے بالوں کو|ap-ne baa-lon ko',1],['انگلیاں|ung-li-yaan','آپ کی انگلیاں|aap kee ung-li-yaan','اپنی انگلیوں کو|ap-nee ung-li-yon ko',1]];
 const UR_DL={hello:'سلام|sa-laam',gm:'صبح بخیر|su-bah ba-khair',goodThanks:'اچھا! شکریہ!|ach-chaa! shuk-ri-ya!',good:'اچھا!|ach-chaa!',awesome:'بہت خوب!|ba-hut khoob!',welcome:'کوئی بات نہیں!|ko-ee baat na-heen!',noprob:'کوئی مسئلہ نہیں!|ko-ee mas-a-la na-heen!',thanks:'شکریہ!|shuk-ri-ya!',doctor:'ڈاکٹر کے پاس جاؤ!|daak-tar ke paas jaa-o!',bye:'خدا حافظ!|khu-daa haa-fiz!'};
-
-const UR_TITLES={"I, You, Mine": "میں، تم، میرا", "He, She, His, Hers": "وہ (مرد)، وہ (عورت)، اس کا، اس کی", "We, You all, They": "ہم، آپ سب، وہ لوگ", "This, That, Here, There": "یہ، وہ، یہاں، وہاں", "Hello & Thanks": "سلام اور شکریہ", "Sorry & Goodbye": "معذرت اور خدا حافظ", "Yesterday, Today, Tomorrow": "گزشتہ کل، آج، آنے والا کل", "Go, Eat, Work, At": "جانا، کھانا، کام، میں", "Places": "جگہیں", "Numbers 1 to 4": "گنتی 1 سے 4", "Food & Drink": "کھانا پینا", "Family": "خاندان", "Colours": "رنگ", "Body": "جسم", "Daily Routine": "روزمرہ معمول", "Weather": "موسم", "Question Words": "سوالیہ الفاظ", "Everyday Verbs": "روزمرہ کے کام", "Shopping": "خریداری", "Getting Around": "آنا جانا", "Wants & Orders": "خواہش اور آرڈر", "Time of Day": "دن کے اوقات", "Days & Weeks": "دن اور ہفتے", "Feelings": "احساسات", "Directions": "سمتیں", "Health": "صحت", "Clothes & Bags": "کپڑے اور بیگ", "Around the House": "گھر میں", "Everyday Things": "روزمرہ کی چیزیں", "Action Words": "حرکت کے الفاظ", "Numbers 5 to 8": "گنتی 5 سے 8", "Numbers 9 to 12": "گنتی 9 سے 12", "Telling Time": "وقت بتانا", "Meals": "کھانے", "Brothers & Sisters": "بھائی بہن", "Grandparents & School": "دادا دادی اور اسکول", "Around Town": "شہر میں", "More Places": "مزید جگہیں", "Jobs": "پیشے", "Dates": "تاریخیں", "Seasons": "موسم کی رُتیں", "Yes & No": "ہاں اور نہیں", "Teens": "تیرہ سے انیس", "Tens": "دہائیاں", "Bigger Numbers": "بڑی گنتی", "Minutes & Hours": "منٹ اور گھنٹے", "Big & Small": "بڑا اور چھوٹا", "Little Words": "چھوٹے الفاظ"};
-const UR_ACTINS=["دس انگلیاں دکھاؤ، پھر تین اور", "پندرہ بار تالی بجاؤ", "اپنے سر کو اٹھارہ بار تھپتھپاؤ", "انیس بار پاؤں پٹخو", "بیس بار اچھلو", "تیس بار تیزی سے تالی بجاؤ", "اپنے کندھوں کو چالیس بار تھپتھپاؤ", "اپنی جگہ پر مارچ کرو، پچاس تک گنو", "اکیس چھوٹی چھلانگیں لگاؤ", "میز کو پچیس بار تھپتھپاؤ", "کیلنڈر پر اکتیس تاریخ دکھاؤ", "اپنے سر کے اوپر بڑا دائرہ بناؤ", "کلائی تھپتھپاؤ اور ایک انگلی اٹھاؤ", "کلائی تھپتھپاؤ اور بڑا دائرہ بناؤ", "کندھے کے پیچھے اشارہ کرو: پہلے", "آگے اشارہ کرو: بعد میں", "بازو پھیلاؤ: بڑا", "جھک کر انگلیاں ملاؤ: چھوٹا", "کوئی نئی چیز اٹھاؤ اور اسے سراہو", "کوئی پرانی چیز پکڑو اور ناک سکیڑو", "دونوں ہاتھ جوڑو: اور", "سر ہلاؤ اور دوست کی طرف اشارہ کرو: بھی", "بڑا انگوٹھا اوپر: بہت اچھا", "بازو گھماؤ: سب", "اسکول میں کتاب کھولنے کی اداکاری کرو", "پارک کی طرح اپنی جگہ ٹہلو", "بازوؤں سے کراس بناؤ", "خیالی ٹرالی دھکیلو", "خیالی پیسے گنو", "بس کو ہاتھ دے کر روکو", "ہوائی جہاز کی طرح بازو پھیلاؤ", "ٹانگیں ملاؤ اور اشارہ کرو: بیت الخلا!", "بخار ناپنے کی اداکاری کرو", "خیالی ہانڈی ہلاؤ", "خیالی اسٹیئرنگ پکڑو", "ہاتھ اٹھاؤ: رکو!", "ہوا میں ہلال بناؤ", "کیلنڈر پر کوئی تاریخ دکھاؤ", "ایک بار گھومو: پورا سال", "خیالی موم بتیاں بجھاؤ", "خیالی پھول سونگھو", "خود کو پنکھا جھلو: بہت گرمی", "خیالی پتے سمیٹو", "خود کو گلے لگاؤ اور کانپو", "سر ہلاؤ (ہاں)", "سر ہلاؤ اور انگلی ہلاؤ (نہیں)", "انگوٹھا اوپر کرو", "خالی ہاتھ دکھاؤ", "پانچ انگلیاں اٹھاؤ", "چھ انگلیاں اٹھاؤ (دونوں ہاتھ)", "سات بار اچھلو", "آٹھ بار تالی بجاؤ", "اپنے گھٹنوں کو نو بار تھپتھپاؤ", "دس انگلیاں دکھاؤ", "گیارہ بار سر ہلاؤ", "بارہ بار پاؤں پٹخو", "کلائی تھپتھپاؤ اور حیران نظر آؤ", "گھڑی پر پورا بجنا دکھاؤ", "ہاتھ الگ الگ رکھو: آدھا", "اپنی کلائی یا گھڑی دیکھو", "ناشتہ کرنے کی اداکاری کرو", "دوپہر کا کھانا کھانے کی اداکاری کرو", "رات کا کھانا کھانے کی اداکاری کرو", "سیب کاٹنے کی اداکاری کرو", "بڑے بھائی کو ہاتھ ہلاؤ", "بڑی بہن کو ہاتھ ہلاؤ", "چھوٹے بھائی کے سر پر ہاتھ پھیرو", "چھوٹی بہن کا ہاتھ تھامو", "دادا کی طرح لاٹھی لے کر جھکو", "دادی کو زور سے گلے لگاؤ", "سیدھے کھڑے ہو کر تختے کی طرف اشارہ کرو", "طالب علم کی طرح ہاتھ اٹھاؤ", "اپنے بائیں طرف اشارہ کرو", "اپنے دائیں طرف اشارہ کرو", "ایک قدم آگے لو", "ایک قدم پیچھے لو", "چہرہ بگاڑو اور درد کی جگہ پکڑو", "سر پکڑو: سر درد", "پانی کے ساتھ گولی کھانے کی اداکاری کرو", "ڈاکٹر سے معائنے کی اداکاری کرو", "اپنے جوتے کو چھوؤ", "اپنی ٹوپی یا سر کے اوپر چھوؤ", "اپنے کپڑوں کو چھوؤ", "اپنا بیگ اٹھاؤ، یا اٹھانے کی اداکاری کرو", "دروازے کو چھوؤ", "کھڑکی کی طرف اشارہ کرو", "میز کو چھوؤ", "کرسی کو چھوؤ", "اپنا فون اٹھاؤ", "کمپیوٹر کی طرف اشارہ کرو، یا ٹائپ کرنے کی اداکاری کرو", "کوئی کتاب اٹھاؤ", "قلم سے لکھنے کی اداکاری کرو", "کھڑے ہو جاؤ", "بیٹھ جاؤ", "دروازہ کھولنے کی اداکاری کرو", "دروازہ بند کرنے کی اداکاری کرو", "کسی آدمی یا لڑکے کی طرف اشارہ کرو (یا اس کی تصویر)", "کسی عورت یا لڑکی کی طرف اشارہ کرو (یا اس کی تصویر)", "لوگوں کے گروہ کی طرف اشارہ کرو (یا تصویر)", "دوست سے ہاتھ ملاؤ، یا خود کو ہائی فائیو دو", "کندھے کے پیچھے اشارہ کرو: گزشتہ کل", "فرش کی طرف اشارہ کرو: آج", "آگے اشارہ کرو: آنے والا کل", "چٹکی بجاؤ: ابھی", "تین قدم آگے لو", "\"میں یہاں ہوں\" کہو اور فرش کی طرف اشارہ کرو", "اپنے گھر کا دروازہ کھولنے کی اداکاری کرو", "میز پر بیٹھنے کی اداکاری کرو", "ریستوراں میں میز پر بیٹھنے کی اداکاری کرو", "خریداری کی ٹرالی دھکیلنے کی اداکاری کرو", "گلاس میں پانی ڈالنے کی اداکاری کرو", "گرم چائے کا کپ پکڑنے کی اداکاری کرو", "چاول کا پیالہ پکڑنے کی اداکاری کرو", "سبزیاں اٹھانے کی اداکاری کرو", "خود کو گلے لگاؤ، جیسے امی کو گلے لگا رہے ہو", "ابو کے ساتھ ہائی فائیو کے لیے ہاتھ اٹھاؤ", "ہاتھ نیچے رکھ کر بچے کا قد دکھاؤ", "بازوؤں سے بڑا دائرہ بناؤ: خاندان", "کسی لال چیز کی طرف اشارہ کرو", "کسی نیلی چیز کی طرف اشارہ کرو", "کسی ہری چیز کی طرف اشارہ کرو", "کسی پیلی چیز کی طرف اشارہ کرو", "ہتھیلیاں کھولو: کیا؟", "کسی شخص کی طرف اشارہ کرو جیسے پوچھ رہے ہو: کون؟", "چاروں طرف دیکھو: کہاں؟", "سر کھجاؤ: کیوں؟", "ہاتھ بڑھاؤ: براہِ مہربانی", "پیٹ سہلاؤ: مزیدار", "\"مجھے پانی چاہیے\" کہو اور ایک گھونٹ لو", "بازو اوپر اٹھاؤ جیسے سورج نکل رہا ہو", "دونوں ہاتھ سیدھے اوپر کرو: سورج سر پر ہے", "ایک ہاتھ آدھا نیچے کرو: سورج ڈھل رہا ہے", "آنکھیں بند کرو اور سر ٹکاؤ", "کراہو اور پاؤں گھسیٹو: پیر", "خوشی سے اچھلو: جمعہ", "پیچھے لیٹ کر آرام کرو: ہفتہ وار چھٹی", "ہوا میں دائرہ بناؤ: ہر روز", "اپنی طرف اشارہ کرو", "کسی اور کی طرف یا اسکرین کی طرف اشارہ کرو", "تالی بجاؤ", "اپنے ساتھ والی فرش کی طرف اشارہ کرو", "کسی دور کی چیز کی طرف اشارہ کرو", "ہاتھ ہلا کر سلام کہو", "شکریہ کہو اور سر ہلاؤ", "ہاتھ ہلا کر خدا حافظ کہو", "معذرت کہو اور تھوڑا جھکو", "میز پر ٹائپ کرنے کی اداکاری کرو", "کھانا کھانے کی اداکاری کرو", "ایک انگلی اٹھاؤ", "دو انگلیاں اٹھاؤ", "تین انگلیاں اٹھاؤ", "چار انگلیاں اٹھاؤ", "اپنے سر کو چھوؤ", "اپنے ہاتھ کو چھوؤ", "اپنے پاؤں کو چھوؤ", "اپنی آنکھوں کو چھوؤ", "کھڑے ہو جاؤ، جیسے نیند سے جاگ رہے ہو", "دانت برش کرنے کی اداکاری کرو", "نہانے کی اداکاری کرو", "ہاتھوں پر گال رکھو اور آنکھیں بند کرو", "گرمی کی اداکاری کرو اور پنکھا جھلو", "سردی کی اداکاری کرو، خود کو گلے لگاؤ اور کانپو", "پانی کا ایک گھونٹ لو", "چائے کے پیسے دینے کی اداکاری کرو", "کاپی میں لکھنے کی اداکاری کرو", "اپنے ارد گرد دیکھو", "اونچی قیمت پر حیران ہونے کی اداکاری کرو", "مسکراؤ: کیا سودا ہے!", "اپنی جگہ پر چلو", "گاڑی چلانے کی اداکاری کرو", "ہوائی جہاز کی طرح بازو پھیلاؤ", "تمیز سے بیٹھو", "مسکراؤ اور تالی بجاؤ", "جمائی لو اور انگڑائی لو", "پیٹ سہلاؤ", "گلا پکڑو، تمہیں پیاس لگی ہے"];
-const UR_CUES={"Point down at the floor: here": "فرش کی طرف اشارہ کرو: یہاں", "Turn slowly and look around the room": "آہستہ مڑو اور کمرے میں چاروں طرف دیکھو", "Point to yourself and say 我": "اپنی طرف اشارہ کرو اور 'I' کہو", "Take four steps forward: there": "چار قدم آگے چلو: وہاں", "Point to where you are": "اشارہ کرو کہ تم کہاں ہو", "Look around the room": "کمرے میں چاروں طرف دیکھو", "Hold up your phone (or pretend)": "اپنا فون اٹھاؤ (یا اداکاری کرو)", "Look around for it": "اسے ارد گرد ڈھونڈو", "Mime holding a phone": "فون پکڑنے کی اداکاری کرو", "Walk four steps: home": "چار قدم چلو: گھر", "Mime a phone call": "فون کال کی اداکاری کرو", "Wave and call out 妈妈": "ہاتھ ہلاؤ اور 'Mom' پکارو", "Mime opening a bag and looking in": "بیگ کھول کر اندر دیکھنے کی اداکاری کرو", "Pat your pockets, then look around": "جیبیں ٹٹولو، پھر ارد گرد دیکھو", "Rub your fingers together: money": "انگلیاں رگڑو: پیسے", "Mime opening a book": "کتاب کھولنے کی اداکاری کرو", "Mime reading a book": "کتاب پڑھنے کی اداکاری کرو", "Mime drinking a glass of water": "گلاس سے پانی پینے کی اداکاری کرو", "Shrug and smile": "کندھے اچکاؤ اور مسکراؤ", "Mime drinking": "پینے کی اداکاری کرو", "Mime eating a big meal": "بڑا کھانا کھانے کی اداکاری کرو", "Mime sipping water": "پانی کے گھونٹ لینے کی اداکاری کرو", "Mime eating with chopsticks": "چمچ سے کھانے کی اداکاری کرو", "Mime washing the dishes": "برتن دھونے کی اداکاری کرو", "Pout, then mime washing dishes": "منہ بناؤ، پھر برتن دھونے کی اداکاری کرو", "Mime washing dishes": "برتن دھونے کی اداکاری کرو", "Mime mopping the floor": "پوچھا لگانے کی اداکاری کرو", "Sigh, then mime mopping": "آہ بھرو، پھر پوچھا لگانے کی اداکاری کرو", "Freeze, then sit down": "رک جاؤ، پھر بیٹھ جاؤ", "Freeze like a statue for 3 seconds": "3 سیکنڈ مجسمے کی طرح ساکت رہو", "Stand still, arms down": "ساکت کھڑے رہو، بازو نیچے", "Sit down and rest": "بیٹھ کر آرام کرو", "Jump three times": "تین بار اچھلو", "Stand up and stretch": "کھڑے ہو کر انگڑائی لو", "Mime putting on a coat": "کوٹ پہننے کی اداکاری کرو", "Give a big thumbs up": "بڑا انگوٹھا اوپر کرو", "Touch your hands: warm or cold?": "اپنے ہاتھ چھوؤ: گرم یا ٹھنڈے؟", "Touch your tummy: empty or full?": "اپنا پیٹ چھوؤ: خالی یا بھرا؟", "Mime drinking a big glass of water": "بڑا گلاس پانی پینے کی اداکاری کرو", "Nod and smile": "سر ہلاؤ اور مسکراؤ", "Mime taking a small sip": "چھوٹا سا گھونٹ لینے کی اداکاری کرو", "Mime opening a door": "دروازہ کھولنے کی اداکاری کرو", "Pout, then mime opening the door": "منہ بناؤ، پھر دروازہ کھولنے کی اداکاری کرو", "Mime turning a door handle": "دروازے کا ہینڈل گھمانے کی اداکاری کرو", "Mime closing a window": "کھڑکی بند کرنے کی اداکاری کرو", "Sigh, then mime closing the window": "آہ بھرو، پھر کھڑکی بند کرنے کی اداکاری کرو", "Mime pushing a window shut": "کھڑکی بند دھکیلنے کی اداکاری کرو", "Sit down": "بیٹھ جاؤ", "Stand tall with your hands on your hips": "کمر پر ہاتھ رکھ کر سیدھے کھڑے ہو جاؤ", "Mime sitting on a chair": "کرسی پر بیٹھنے کی اداکاری کرو", "Give a big smile": "بڑی سی مسکراہٹ دو", "Shake it off: jump twice": "جھٹک دو: دو بار اچھلو", "Pat your head and smile": "سر تھپتھپاؤ اور مسکراؤ"};
-
-const ENENG=(function(G,gsel,gpat,gsub){
-const you=(h,py,en,t3,be)=>({h,py,en,t3,be});
-const PATS=[
- {k:'do',h:'去',py:'qù',lab:'Do something',day:1},
- {k:'weather',h:'天气',py:'tiānqì',lab:'Weather',day:16},
- {k:'this',h:'这是',py:'zhè shì',lab:'This is…',day:6},
- {k:'have',h:'有',py:'yǒu',lab:'I have…',day:10},
- {k:'sorry',h:'对不起',py:'duìbuqǐ',lab:'Say sorry',day:6},
- {k:'colour',h:'红色',py:'hóngsè',lab:'Colours',day:14},
- {k:'where',h:'哪里',py:'nǎlǐ',lab:'Where is…?',day:17},
- {k:'price',h:'多少钱',py:'duōshao qián',lab:'How much?',day:19},
- {k:'travel',h:'坐车',py:'zuòchē',lab:'How I go',day:20},
- {k:'want',h:'想',py:'xiǎng',lab:'I want to…',day:21},
- {k:'order',h:'请',py:'qǐng',lab:'Order food',day:21},
- {k:'feel',h:'高兴',py:'gāoxìng',lab:'How I feel',day:24},
- {k:'direction',h:'左边',py:'zuǒbian',lab:'Which way?',day:25},
- {k:'health',h:'疼',py:'téng',lab:'It hurts',day:26},
- {k:'clock',h:'几点',py:'jǐ diǎn',lab:'What time?',day:33},
- {k:'job',h:'是',py:'shì',lab:'My job',day:39},
- {k:'date',h:'生日',py:'shēngrì',lab:'Birthday',day:40}];
-const WHEN=[
- {h:'昨天',py:'zuótiān',en:'yesterday',t:'past'},
- {h:'今天',py:'jīntiān',en:'today',t:'pres'},
- {h:'明天',py:'míngtiān',en:'tomorrow',t:'fut'},
- {h:'现在',py:'xiànzài',en:'now',t:'prog'},
- {h:'早上',py:'zǎoshang',en:'in the morning',t:'pres',lab:'morning',day:5,not:'weather'},
- {h:'中午',py:'zhōngwǔ',en:'at noon',t:'pres',lab:'noon',day:22,not:'weather'},
- {h:'下午',py:'xiàwǔ',en:'in the afternoon',t:'pres',lab:'afternoon',day:22,not:'weather'},
- {h:'晚上',py:'wǎnshang',en:'in the evening',t:'pres',lab:'evening',day:22,not:'weather'},
- {h:'春天',py:'chūntiān',en:'in spring',t:'pres',lab:'spring',day:41},
- {h:'夏天',py:'xiàtiān',en:'in summer',t:'pres',lab:'summer',day:41},
- {h:'秋天',py:'qiūtiān',en:'in autumn',t:'pres',lab:'autumn',day:41},
- {h:'冬天',py:'dōngtiān',en:'in winter',t:'pres',lab:'winter',day:41},
- {h:'星期一',py:'xīngqīyī',en:'on Monday',t:'pres',lab:'Monday',day:23,not:'weather'},
- {h:'星期五',py:'xīngqīwǔ',en:'on Friday',t:'pres',lab:'Friday',day:23,not:'weather'},
- {h:'周末',py:'zhōumò',en:'on the weekend',t:'pres',lab:'weekend',day:23,not:'weather'},
- {h:'每天',py:'měitiān',en:'every day',t:'pres',lab:'every day',day:23,not:'weather'}];
-const WHAT=[
- {k:'go',h:'去',py:'qù',en:'go',need:'place',day:1},
- {k:'eat',h:'吃饭',py:'chīfàn',en:'eat',need:'place',day:1,vb:T('吃饭','chīfàn')},
- {k:'work',h:'工作',py:'gōngzuò',en:'work',need:'place',day:1,vb:T('工作','gōngzuò')},
- {k:'sleep',h:'睡觉',py:'shuìjiào',en:'sleep',need:'place',day:15,vb:T('睡觉','shuìjiào')},
- {k:'study',h:'学习',py:'xuéxí',en:'study',need:'place',day:18,vb:T('学习','xuéxí')},
- {k:'drink',h:'喝',py:'hē',en:'drink',need:'obj',day:18,vb:T('喝','hē')},
- {k:'buy',h:'买',py:'mǎi',en:'buy',need:'obj',day:18,vb:T('买','mǎi')},
- {k:'getup',h:'起床',py:'qǐchuáng',en:'get up',need:'none',day:15,vb:T('起床','qǐchuáng')},
- {k:'shower',h:'洗澡',py:'xǐzǎo',en:'shower',need:'none',day:15,vb:T('洗澡','xǐzǎo')},
- {k:'brush',h:'刷牙',py:'shuāyá',en:'brush teeth',need:'none',day:15,vb:T('刷牙','shuāyá')},
- {k:'see',h:'看',py:'kàn',en:'see',need:'objonly',day:18,vb:T('看','kàn')},
- {k:'medicine',h:'吃药',py:'chīyào',en:'take medicine',need:'none',day:26,vb:T('吃药','chīyào')},
- {k:'read',h:'看书',py:'kànshū',en:'read',need:'place',day:29,vb:T('看书','kànshū')},
- {k:'open',h:'开',py:'kāi',en:'open',need:'obj2',day:30,vb:T('开','kāi')},
- {k:'close',h:'关',py:'guān',en:'close',need:'obj2',day:30,vb:T('关','guān')},
- {k:'breakfast',h:'吃早饭',py:'chī zǎofàn',en:'have breakfast',need:'place',day:34,vb:T('吃早饭','chī zǎofàn')},
- {k:'lunch',h:'吃午饭',py:'chī wǔfàn',en:'have lunch',need:'place',day:34,vb:T('吃午饭','chī wǔfàn')},
- {k:'dinner',h:'吃晚饭',py:'chī wǎnfàn',en:'have dinner',need:'place',day:34,vb:T('吃晚饭','chī wǎnfàn')}];
-const OBJ=[
- {h:'水',py:'shuǐ',en:'water',day:11,for:'drink buy'},
- {h:'茶',py:'chá',en:'tea',day:11,for:'drink buy'},
- {h:'红茶',py:'hóngchá',en:'black tea',day:13,for:'drink buy'},
- {h:'绿茶',py:'lǜchá',en:'green tea',day:13,for:'drink buy'},
- {h:'菜',py:'cài',en:'food',day:11,for:'buy',food:1},
- {h:'朋友',py:'péngyou',en:'friends',day:6,for:'see'},
- {h:'妈妈',py:'māma',en:'mom',day:12,for:'see'},
- {h:'爸爸',py:'bàba',en:'dad',day:12,for:'see'},
- {h:'哥哥',py:'gēge',en:'big brother',day:35,for:'see'},
- {h:'姐姐',py:'jiějie',en:'big sister',day:35,for:'see'},
- {h:'爷爷',py:'yéye',en:'grandpa',day:36,for:'see'},
- {h:'奶奶',py:'nǎinai',en:'grandma',day:36,for:'see'},
- {h:'老师',py:'lǎoshī',en:'the teacher',day:36,for:'see'},
- {h:'护士',py:'hùshi',en:'the nurse',day:39,for:'see'},
- {h:'厨师',py:'chúshī',en:'the chef',day:39,for:'see'},
- {h:'司机',py:'sījī',en:'the driver',day:39,for:'see'},
- {h:'警察',py:'jǐngchá',en:'the police officer',day:39,for:'see'},
- {h:'水果',py:'shuǐguǒ',en:'fruit',day:34,for:'buy',food:1},
- {h:'孩子',py:'háizi',en:'the children',day:12,for:'see'},
- {h:'医生',py:'yīshēng',en:'the doctor',day:26,for:'see'},
- {h:'门',py:'mén',en:'door',day:28,for:'open close'},
- {h:'窗',py:'chuāng',en:'window',day:28,for:'open close'},
- {h:'衣服',py:'yīfu',en:'clothes',day:27,for:'buy',nopr:1},
- {h:'鞋',py:'xié',en:'shoes',day:27,for:'buy',nopr:1},
- {h:'帽子',py:'màozi',en:'a hat',day:27,for:'buy',nopr:1},
- {h:'包',py:'bāo',en:'a bag',day:27,for:'buy',nopr:1},
- {h:'手机',py:'shǒujī',en:'a phone',day:29,for:'buy',nopr:1},
- {h:'电脑',py:'diànnǎo',en:'a computer',day:29,for:'buy',nopr:1},
- {h:'书',py:'shū',en:'a book',day:29,for:'buy',nopr:1},
- {h:'笔',py:'bǐ',en:'a pen',day:29,for:'buy',nopr:1}];
-const WHERE=[
- {k:'home',h:'家',py:'jiā',en:'home',go:'home',at:'at home'},
- {k:'office',h:'办公室',py:'bàngōngshì',en:'office',go:'to the office',at:'at the office'},
- {k:'rest',h:'餐厅',py:'cāntīng',en:'restaurant',go:'to the restaurant',at:'at the restaurant'},
- {k:'store',h:'商店',py:'shāngdiàn',en:'store',go:'to the store',at:'at the store'},
- {k:'school',h:'学校',py:'xuéxiào',en:'school',go:'to school',at:'at school',day:37},
- {k:'park',h:'公园',py:'gōngyuán',en:'park',go:'to the park',at:'at the park',day:37},
- {k:'hosp',h:'医院',py:'yīyuàn',en:'hospital',go:'to the hospital',at:'at the hospital',day:37},
- {k:'super',h:'超市',py:'chāoshì',en:'supermarket',go:'to the supermarket',at:'at the supermarket',day:37},
- {k:'bank',h:'银行',py:'yínháng',en:'bank',go:'to the bank',at:'at the bank',day:38},
- {k:'station',h:'车站',py:'chēzhàn',en:'station',go:'to the station',at:'at the station',day:38},
- {k:'airport',h:'机场',py:'jīchǎng',en:'airport',go:'to the airport',at:'at the airport',day:38},
- {k:'toilet',h:'厕所',py:'cèsuǒ',en:'bathroom',go:'to the bathroom',at:'in the bathroom',day:38},
- {h:'这里',py:'zhèlǐ',en:'here',go:'here',at:'here',day:4,k:'here'},
- {h:'那里',py:'nàlǐ',en:'there',go:'there',at:'there',day:4,k:'there'}];
-const WHO=[
- {h:'我',py:'wǒ',lab:'I',en:'I',be:'am',s3:0,poss:'my',day:1,ask:you('你','nǐ','you',0,'are')},
- {h:'他',py:'tā',lab:'he',en:'he',be:'is',s3:1,poss:'his',day:2,ask:you('他','tā','he',1,'is')},
- {h:'她',py:'tā',lab:'she',en:'she',be:'is',s3:1,poss:'her',day:2,ask:you('她','tā','she',1,'is')},
- {h:'我们',py:'wǒmen',lab:'we',en:'we',be:'are',s3:0,poss:'our',day:3,ask:you('你们','nǐmen','you all',0,'are')},
- {h:'他们',py:'tāmen',lab:'they (men)',en:'they',be:'are',s3:0,poss:'their',day:3,ask:you('他们','tāmen','they',0,'are')},
- {h:'她们',py:'tāmen',lab:'they (women)',en:'they',be:'are',s3:0,poss:'their',day:3,ask:you('她们','tāmen','they',0,'are')},
- {h:'我的朋友',py:'wǒ de péngyou',lab:'my friend',en:'my friend',be:'is',s3:1,poss:'their',day:6,tok:[T('我','wǒ'),T('的','de'),T('朋友','péngyou')],ask:you('你的朋友','nǐ de péngyou','your friend',1,'is')},
- {h:'我妈妈',py:'wǒ māma',lab:'my mom',en:'my mom',be:'is',s3:1,poss:'her',day:12,tok:[T('我','wǒ'),T('妈妈','māma')],ask:you('你妈妈','nǐ māma','your mom',1,'is')},
- {h:'我爸爸',py:'wǒ bàba',lab:'my dad',en:'my dad',be:'is',s3:1,poss:'his',day:12,tok:[T('我','wǒ'),T('爸爸','bàba')],ask:you('你爸爸','nǐ bàba','your dad',1,'is')}];
-const WTH=[
- {k:'hot',h:'热',py:'rè',en:'hot',day:16},
- {k:'cold',h:'冷',py:'lěng',en:'cold',day:16},
- {k:'rain',h:'下雨',py:'xiàyǔ',en:'rain',lab:'raining',day:16}];
-const TRAVEL=[
- {h:'坐车',py:'zuòchē',en:'by car',day:20},
- {h:'坐地铁',py:'zuò dìtiě',en:'by subway',day:20},
- {h:'坐飞机',py:'zuò fēijī',en:'by plane',day:20},
- {h:'走路',py:'zǒulù',en:'on foot',day:20}];
-const ADJ=[{h:'贵',py:'guì',en:'expensive'},{h:'便宜',py:'piányi',en:'cheap'},{h:'好吃',py:'hǎochī',en:'delicious',food:1}];
-const FEEL=[{h:'高兴',py:'gāoxìng',en:'happy'},{h:'累',py:'lèi',en:'tired'},{h:'饿',py:'è',en:'hungry'},{h:'渴',py:'kě',en:'thirsty'}];
-const JOBS=[
- {h:'医生',py:'yīshēng',en:'doctor',pl:'doctors',day:26},
- {h:'老师',py:'lǎoshī',en:'teacher',pl:'teachers',day:36},
- {h:'学生',py:'xuésheng',en:'student',pl:'students',day:36},
- {h:'护士',py:'hùshi',en:'nurse',pl:'nurses',day:39},
- {h:'厨师',py:'chúshī',en:'chef',pl:'chefs',day:39},
- {h:'司机',py:'sījī',en:'driver',pl:'drivers',day:39},
- {h:'警察',py:'jǐngchá',en:'police officer',pl:'police officers',day:39}];
-const NUMS12=[['一','yī','1st'],['二','èr','2nd'],['三','sān','3rd'],['四','sì','4th'],['五','wǔ','5th'],['六','liù','6th'],['七','qī','7th'],['八','bā','8th'],['九','jiǔ','9th'],['十','shí','10th'],['十一','shíyī','11th'],['十二','shí’èr','12th']];
-const MONTHS=NUMS12.map((n,i)=>({h:n[0]+'月',py:n[1]+'yuè',en:['January','February','March','April','May','June','July','August','September','October','November','December'][i]}));
-const UNI=['','yī','èr','sān','sì','wǔ','liù','qī','bā','jiǔ'],UZH='一二三四五六七八九';
-const ordOf=n=>n+((n%100>=11&&n%100<=13)?'th':({1:'st',2:'nd',3:'rd'}[n%10]||'th'));
-const DATEN=Array.from({length:31},(_,i)=>{const n=i+1;let zh,py;
-  if(n<=12){zh=NUMS12[i][0];py=NUMS12[i][1]}
-  else if(n<20){zh='十'+UZH[n-11];py='shí'+UNI[n-10]}
-  else{const t=Math.floor(n/10),u=n%10;zh=UZH[t-1]+'十'+(u?UZH[u-1]:'');py=UNI[t]+'shí'+UNI[u]}
-  return {h:zh+'号',py:py+'hào',en:ordOf(n),ord:ordOf(n),n}});
-const DIR=[{h:'左边',py:'zuǒbian',en:'on the left'},{h:'右边',py:'yòubian',en:'on the right'},{h:'前面',py:'qiánmiàn',en:'in front'},{h:'后面',py:'hòumiàn',en:'behind'}];
-const BODY=[{h:'头',py:'tóu',en:'head'},{h:'手',py:'shǒu',en:'hand'},{h:'脚',py:'jiǎo',en:'foot'},{h:'眼睛',py:'yǎnjing',en:'eyes',plural:1}];
-const COL=[{h:'红色',py:'hóngsè',en:'red'},{h:'蓝色',py:'lánsè',en:'blue'},{h:'绿色',py:'lǜsè',en:'green'},{h:'黄色',py:'huángsè',en:'yellow'}];
-const DEM=[{k:'this',h:'这',py:'zhè',en:'this'},{k:'that',h:'那',py:'nà',en:'that'}];
-const OWN=[{h:'我的',py:'wǒ de',en:'my'},{h:'你的',py:'nǐ de',en:'your'},{h:'他的',py:'tā de',en:'his'},{h:'她的',py:'tā de',en:'her'}];
-const NOUN=[
- {h:'朋友',py:'péngyou',en:'friend',pl:'friends',day:6,have:1},
- {h:'水',py:'shuǐ',en:'water',pl:'water',day:11},
- {h:'茶',py:'chá',en:'tea',pl:'tea',day:11},
- {h:'菜',py:'cài',en:'dish',pl:'dishes',day:11,have:1,col:1},
- {h:'妈妈',py:'māma',en:'mom',pl:'moms',day:12},
- {h:'爸爸',py:'bàba',en:'dad',pl:'dads',day:12},
- {h:'孩子',py:'háizi',en:'child',pl:'children',day:12,have:1},
- {h:'头',py:'tóu',en:'head',pl:'heads',day:14,col:1},
- {h:'手',py:'shǒu',en:'hand',pl:'hands',day:14,col:1},
- {h:'脚',py:'jiǎo',en:'foot',pl:'feet',day:14,col:1},
- {h:'眼睛',py:'yǎnjing',en:'eyes',pl:'eyes',day:14,plural:1,col:1},
- {h:'衣服',py:'yīfu',en:'clothes',pl:'clothes',plural:1,day:27,col:1},
- {h:'水果',py:'shuǐguǒ',en:'fruit',pl:'fruit',day:34,have:1,col:1},
- {h:'哥哥',py:'gēge',en:'big brother',pl:'big brothers',day:35,have:1},
- {h:'姐姐',py:'jiějie',en:'big sister',pl:'big sisters',day:35,have:1},
- {h:'弟弟',py:'dìdi',en:'little brother',pl:'little brothers',day:35,have:1},
- {h:'妹妹',py:'mèimei',en:'little sister',pl:'little sisters',day:35,have:1},
- {h:'爷爷',py:'yéye',en:'grandpa',pl:'grandpas',day:36,have:1},
- {h:'奶奶',py:'nǎinai',en:'grandma',pl:'grandmas',day:36,have:1},
- {h:'老师',py:'lǎoshī',en:'teacher',pl:'teachers',day:36,have:1},
- {h:'学生',py:'xuésheng',en:'student',pl:'students',day:36,have:1},
- {h:'鞋',py:'xié',en:'shoe',pl:'shoes',day:27,col:1},
- {h:'帽子',py:'màozi',en:'hat',pl:'hats',day:27,col:1},
- {h:'包',py:'bāo',en:'bag',pl:'bags',day:27,col:1},
- {h:'门',py:'mén',en:'door',pl:'doors',day:28,col:1},
- {h:'窗',py:'chuāng',en:'window',pl:'windows',day:28,col:1},
- {h:'桌子',py:'zhuōzi',en:'table',pl:'tables',day:28,col:1},
- {h:'椅子',py:'yǐzi',en:'chair',pl:'chairs',day:28,col:1},
- {h:'手机',py:'shǒujī',en:'phone',pl:'phones',day:29,col:1},
- {h:'电脑',py:'diànnǎo',en:'computer',pl:'computers',day:29,col:1},
- {h:'书',py:'shū',en:'book',pl:'books',day:29,col:1},
- {h:'笔',py:'bǐ',en:'pen',pl:'pens',day:29,col:1}];
-const NUM=[
- {h:'一',py:'yī',en:'one',n:1},{h:'两',py:'liǎng',en:'two',n:2},{h:'三',py:'sān',en:'three',n:3},{h:'四',py:'sì',en:'four',n:4},
- {h:'五',py:'wǔ',en:'five',n:5,day:31},{h:'六',py:'liù',en:'six',n:6,day:31},{h:'七',py:'qī',en:'seven',n:7,day:31},{h:'八',py:'bā',en:'eight',n:8,day:31},
- {h:'九',py:'jiǔ',en:'nine',n:9,day:32},{h:'十',py:'shí',en:'ten',n:10,day:32},{h:'十一',py:'shíyī',en:'eleven',n:11,day:32},{h:'十二',py:"shí'èr",en:'twelve',n:12,day:32}];
-const VERB={go:['went','go','goes','going'],eat:['ate','eat','eats','eating'],work:['worked','work','works','working'],
- sleep:['slept','sleep','sleeps','sleeping'],study:['studied','study','studies','studying'],drink:['drank','drink','drinks','drinking'],
- buy:['bought','buy','buys','buying'],getup:['got up','get up','gets up','getting up'],shower:['showered','shower','showers','showering'],brush:['brushed','brush','brushes','brushing'],see:['went','go','goes','going'],medicine:['took','take','takes','taking'],read:['read','read','reads','reading'],open:['opened','open','opens','opening'],close:['closed','close','closes','closing'],
- breakfast:['had breakfast','have breakfast','has breakfast','having breakfast'],lunch:['had lunch','have lunch','has lunch','having lunch'],dinner:['had dinner','have dinner','has dinner','having dinner']};
-
-const MAP=new Map();
-(()=>{const a=G.PATS,b=PATS;if(a.length!==b.length)console.warn('len PATS',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis PATS',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.WHEN,b=WHEN;if(a.length!==b.length)console.warn('len WHEN',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis WHEN',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.WHAT,b=WHAT;if(a.length!==b.length)console.warn('len WHAT',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis WHAT',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.OBJ,b=OBJ;if(a.length!==b.length)console.warn('len OBJ',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis OBJ',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.WHERE,b=WHERE;if(a.length!==b.length)console.warn('len WHERE',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis WHERE',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.WHO,b=WHO;if(a.length!==b.length)console.warn('len WHO',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis WHO',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.WTH,b=WTH;if(a.length!==b.length)console.warn('len WTH',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis WTH',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.TRAVEL,b=TRAVEL;if(a.length!==b.length)console.warn('len TRAVEL',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis TRAVEL',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.ADJ,b=ADJ;if(a.length!==b.length)console.warn('len ADJ',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis ADJ',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.FEEL,b=FEEL;if(a.length!==b.length)console.warn('len FEEL',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis FEEL',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.JOBS,b=JOBS;if(a.length!==b.length)console.warn('len JOBS',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis JOBS',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.MONTHS,b=MONTHS;if(a.length!==b.length)console.warn('len MONTHS',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis MONTHS',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.DATEN,b=DATEN;if(a.length!==b.length)console.warn('len DATEN',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis DATEN',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.DIR,b=DIR;if(a.length!==b.length)console.warn('len DIR',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis DIR',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.BODY,b=BODY;if(a.length!==b.length)console.warn('len BODY',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis BODY',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.COL,b=COL;if(a.length!==b.length)console.warn('len COL',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis COL',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.DEM,b=DEM;if(a.length!==b.length)console.warn('len DEM',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis DEM',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.OWN,b=OWN;if(a.length!==b.length)console.warn('len OWN',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis OWN',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.NOUN,b=NOUN;if(a.length!==b.length)console.warn('len NOUN',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis NOUN',i,k);MAP.set(o,b[i])})})();
-(()=>{const a=G.NUM,b=NUM;if(a.length!==b.length)console.warn('len NUM',a.length,b.length);a.forEach((o,i)=>{const k=o.k||o.h;if((b[i].k||b[i].h)!==k&&o.h!==b[i].h)console.warn('mis NUM',i,k);MAP.set(o,b[i])})})();
-const M=o=>MAP.get(o)||o;
-const sel=()=>{const s=gsel(),r={};for(const k in s)r[k]=M(s[k]);return r};
-const pat=()=>M(gpat());
-const sub=()=>M(gsub());
-function enSent(){
-  const s=sel(),k=pat().k,S=sub();
-  if(k==='do'||k==='want'){
-    const W=s.when||{t:'pres',en:''},Vb=s.what,v=VERB[Vb.k];
-    const vp=k==='want'?(S.s3?'wants to ':'want to ')+(Vb.k==='see'?'see':v[1]):{past:v[0],pres:S.s3?v[2]:v[1],fut:'will '+v[1],prog:S.be+' '+v[3]}[W.t];
-    let tail='';
-    if(Vb.k==='go')tail=' '+s.where.go;
-    else if(Vb.need==='none')tail=Vb.k==='brush'?' '+S.poss+' teeth':Vb.k==='medicine'?' medicine':'';
-    else if(Vb.need==='objonly')tail=(k==='want'?' ':' to see ')+s.obj.en;
-    else if(Vb.need==='obj2')tail=' the '+s.obj.en;
-    else{if(Vb.need==='obj')tail=' '+s.obj.en;tail+=' '+s.where.at}
-    return cap(S.en)+' '+vp+tail+(k==='want'?'':' '+W.en)+'.';
-  }
-  if(k==='weather'){
-    const W=s.when,X=s.wth;
-    if(X.k==='rain')return {past:'It rained yesterday.',pres:'It is raining today.',fut:'It will rain tomorrow.',prog:'It is raining now.'}[W.t];
-    return `The weather ${{past:'was',pres:'is',fut:'will be',prog:'is'}[W.t]} ${X.en} ${W.en}.`;
-  }
-  if(k==='travel'){const W=s.when,P=s.where,v=VERB.go;const vp={past:v[0],pres:S.s3?v[2]:v[1],fut:'will '+v[1],prog:S.be+' '+v[3]}[W.t];return `${cap(S.en)} ${vp} ${P.go} ${s.mode.en} ${W.en}.`}
-  if(k==='price')return `${s.dem.k==='this'?'This':'That'} ${s.obj.en} is ${s.adj.en}.`;
-  if(k==='order')return `Please give me ${s.obj.en}.`;
-  if(k==='direction')return `${s.where.k==='home'?'Home':'The '+s.where.en} is ${s.dir.en}.`;
-  if(k==='date')return `${S.tok?cap(S.en)+"'s":cap(S.poss)} birthday is on ${s.month.en} ${s.dayn.ord}.`;
-  if(k==='job')return `${cap(S.en)} ${S.be} ${S.be==='are'?s.job.pl:(/^[aeiou]/.test(s.job.en)?'an ':'a ')+s.job.en}.`;
-  if(k==='clock'){const v=VERB[s.clk.k];return `${cap(S.en)} ${S.s3?v[2]:v[1]}${s.clk.k==='brush'?' '+S.poss+' teeth':''} at ${s.half.half?s.hour.n+':30':s.hour.n+" o'clock"}.`}
-  if(k==='health')return `${cap(S.poss)} ${s.body.en} ${s.body.plural?'hurt':'hurts'}.`;
-  if(k==='feel'){const W=s.when;return `${cap(S.en)} ${{past:S.be==='are'?'were':'was',pres:S.be,fut:'will be',prog:S.be}[W.t]} ${s.feel.en} ${W.en}.`}
-  if(k==='sorry'){const W=s.when,P=s.where;return `Sorry, I ${W.t==='fut'?"won't go":"didn't go"} ${P.go} ${W.en}.`}
-  if(k==='colour'){const pl=s.noun.plural,th=s.dem.k==='this';return `${pl?(th?'These are':'Those are'):(th?'This is':'That is')} ${pl?'':'a '}${s.col.en} ${s.noun.en}.`}
-  if(k==='where')return `${cap(S.en)} ${S.be} ${s.where.at}.`;
-  if(k==='this'){
-    const pl=s.noun.plural,th=s.dem.k==='this';
-    return `${pl?(th?'These are':'Those are'):(th?'This is':'That is')} ${s.own.en} ${s.noun.en}.`;
-  }
-  return `${cap(S.en)} ${S.s3?'has':'have'} ${s.num.en} ${s.num.n>1?s.noun.pl:s.noun.en}.`;
-}
-function question(){
-  const s=sel(),k=pat().k,S=sub();
-  if(k==='do'){
-    const a=S.ask,W=s.when;
-    const en={past:`What did ${a.en} do yesterday?`,pres:`What ${a.t3?'does':'do'} ${a.en} do ${W.en}?`,fut:`What will ${a.en} do tomorrow?`,prog:`What ${a.t3?'is':'are'} ${a.en} doing now?`}[W.t];
-    return {zh:`${a.h}${W.h}做什么？`,py:`${a.py} ${W.py} zuò shénme?`,en};
-  }
-  if(k==='weather'){
-    const W=s.when;
-    return {zh:`${W.h}天气怎么样？`,py:`${W.py} tiānqì zěnmeyàng?`,en:{past:'How was the weather yesterday?',pres:'How is the weather today?',fut:'How will the weather be tomorrow?',prog:'How is the weather now?'}[W.t]};
-  }
-  if(k==='sorry'){
-    const W=s.when,P=s.where,home=P.k==='home';
-    return {zh:`${W.h}你${home?'回家':'去'+P.h}吗？`,py:`${W.py} nǐ ${home?'huíjiā':'qù '+P.py} ma?`,en:W.t==='fut'?`Will you go ${P.go} tomorrow?`:`Did you go ${P.go} ${W.en}?`};
-  }
-  if(k==='colour'){
-    const th=s.dem.k==='this',pl=s.noun.plural;
-    return {zh:`${s.dem.h}是什么？`,py:`${s.dem.py} shì shénme?`,en:pl?`What are ${th?'these':'those'}?`:`What is ${th?'this':'that'}?`};
-  }
-  if(k==='direction')return {zh:`${s.where.h}在哪里？`,py:`${s.where.py} zài nǎlǐ?`,en:`Where is ${s.where.k==='home'?'home':'the '+s.where.en}?`};
-  if(k==='date'){const a=S.ask,po=a.en.startsWith('your ')?a.en+"'s":({you:'your','you all':'your',he:'his',she:'her',they:'their'}[a.en]||'their');return {zh:`${a.h}的生日是几月几号？`,py:`${a.py} de shēngrì shì jǐ yuè jǐ hào?`,en:`When is ${po} birthday?`}}
-  if(k==='job'){const a=S.ask;return {zh:`${a.h}做什么工作？`,py:`${a.py} zuò shénme gōngzuò?`,en:`What ${a.t3?'does':'do'} ${a.en} do for work?`}}
-  if(k==='clock'){const a=S.ask,v=VERB[s.clk.k],po={you:'your','you all':'your',he:'his',she:'her','your dad':'his','your mom':'her'}[a.en]||'their';return {zh:`${a.h}几点${s.clk.h}？`,py:`${a.py} jǐ diǎn ${s.clk.vb.py}?`,en:`What time ${a.t3?'does':'do'} ${a.en} ${v[1]}${s.clk.k==='brush'?' '+po+' teeth':''}?`}}
-  if(k==='health'){const a=S.ask;return {zh:`${a.h}怎么了？`,py:`${a.py} zěnme le?`,en:`What is wrong with ${({he:'him',she:'her',they:'them','you all':'you all'})[a.en]||a.en}?`}}
-  if(k==='want'){const a=S.ask;return {zh:`${a.h}想做什么？`,py:`${a.py} xiǎng zuò shénme?`,en:`What ${a.t3?'does':'do'} ${a.en} want to do?`}}
-  if(k==='order')return {zh:'你要什么？',py:'nǐ yào shénme?',en:'What would you like?'};
-  if(k==='price'){const th=s.dem.k==='this';return {zh:`${s.dem.h}个${s.obj.h}多少钱？`,py:`${th?'zhège':'nàge'} ${s.obj.py} duōshao qián?`,en:`How much is ${th?'this':'that'} ${s.obj.en}?`}}
-  if(k==='travel'){
-    const a=S.ask,W=s.when,P=s.where,home=P.k==='home';
-    const en={past:`How did ${a.en} go ${P.go} ${W.en}?`,pres:`How ${a.t3?'does':'do'} ${a.en} go ${P.go} ${W.en}?`,fut:`How will ${a.en} go ${P.go} ${W.en}?`,prog:`How ${a.be} ${a.en} going ${P.go} ${W.en}?`}[W.t];
-    return {zh:`${a.h}${W.h}怎么${home?'回家':'去'+P.h}？`,py:`${a.py} ${W.py} zěnme ${home?'huíjiā':'qù '+P.py}?`,en};
-  }
-  if(k==='feel'){
-    const a=S.ask,W=s.when;
-    const en={past:`How ${a.be==='are'?'were':'was'} ${a.en} ${W.en}?`,pres:`How ${a.be} ${a.en} ${W.en}?`,fut:`How will ${a.en} be ${W.en}?`,prog:`How ${a.be} ${a.en} ${W.en}?`}[W.t];
-    return {zh:`${a.h}${W.h}怎么样？`,py:`${a.py} ${W.py} zěnmeyàng?`,en};
-  }
-  if(k==='where'){const a=S.ask;return {zh:`${a.h}在哪里？`,py:`${a.py} zài nǎlǐ?`,en:`Where ${a.be} ${a.en}?`}}
-  if(k==='this'){
-    const n=s.noun,th=s.dem.k==='this';
-    return {zh:`${s.dem.h}是谁的${n.h}？`,py:`${s.dem.py} shì shéi de ${n.py}?`,en:n.plural?`Whose eyes are ${th?'these':'those'}?`:`Whose ${n.en} is ${th?'this':'that'}?`};
-  }
-  const a=S.ask,n=s.noun;
-  return {zh:`${a.h}有几个${n.h}？`,py:`${a.py} yǒu jǐ ge ${n.py}?`,en:`How many ${n.pl} ${a.t3?'does':'do'} ${a.en} have?`};
-}
-
-return {enSent,question,MAP,tables:{PATS,WHEN,WHAT,OBJ,WHERE,WHO,WTH,TRAVEL,ADJ,FEEL,JOBS,MONTHS,DATEN,DIR,BODY,COL,DEM,OWN,NOUN,NUM}};
-})({PATS,WHEN,WHAT,OBJ,WHERE,WHO,WTH,TRAVEL,ADJ,FEEL,JOBS,MONTHS,DATEN,DIR,BODY,COL,DEM,OWN,NOUN,NUM},()=>sel(),()=>pat(),()=>sub());
 
 /* ===== Urdu sentence engine (SOV, agreement, ergative) ===== */
 const URENG=(function(G,gsel,gpat,gsub){
@@ -2728,67 +2388,57 @@ function question(){
 return {sentence,question,MAP,tables:TABS,P,VB,toks};
 })({PATS,WHEN,WHAT,OBJ,WHERE,WHO,WTH,TRAVEL,ADJ,FEEL,JOBS,MONTHS,DATEN,DIR,BODY,COL,DEM,OWN,NOUN,NUM},()=>sel(),()=>pat(),()=>sub());
 
-/* ===== Urdu meaning layer + English realizer wiring ===== */
-const uP0=s=>s.split("|")[0];
-const EN_P={do:'go',weather:'weather',this:'this is',have:'I have',sorry:'sorry',colour:'red',where:'where',price:'how much',travel:'by car',want:'I want',order:'please',feel:'happy',direction:'left',health:'it hurts',clock:'what time',job:'I am',date:'birthday'};
-const MU_P={do:'کچھ کرنا',weather:'موسم',this:'یہ ہے…',have:'میرے پاس ہے…',sorry:'معذرت',colour:'رنگ',where:'کہاں ہے…؟',price:'کتنے کا ہے؟',travel:'میں کیسے جاتا ہوں',want:'میری خواہش…',order:'آرڈر',feel:'میرا احساس',direction:'کس طرف؟',health:'درد ہے',clock:'کیا وقت؟',job:'میرا پیشہ',date:'سالگرہ'};
-const ENO=['','first','second','third','fourth','fifth','sixth','seventh','eighth','ninth','tenth','eleventh','twelfth','thirteenth','fourteenth','fifteenth','sixteenth','seventeenth','eighteenth','nineteenth','twentieth','twenty-first','twenty-second','twenty-third','twenty-fourth','twenty-fifth','twenty-sixth','twenty-seventh','twenty-eighth','twenty-ninth','thirtieth','thirty-first'];
-const enWords=t=>t.replace(/\b(\d+)(st|nd|rd|th)\b/g,(m,n)=>ENO[+n]||m).replace(/\b(\d+):30\b/g,(m,n)=>ENW[+n]+' thirty').replace(/\b(\d+)\b/g,(m,n)=>ENW[+n]!==undefined?ENW[+n]:m);
+/* ===== Urdu display layer + realizer wiring ===== */
+UR_WORDS.forEach(r=>r.forEach(U));UR_ACTS.forEach(U);UR_MDIRS.forEach(U);
+UR_MT.forEach(m=>{U(m.q);m.o.forEach(o=>o.forEach(U))});
+UR_HUNT.forEach(h=>h.forEach(U));UR_COLS.forEach(U);UR_BODY.forEach(b=>b.slice(0,3).forEach(U));Object.values(UR_DL).forEach(U);
+['پھر|phir','پہلے|pehle','آخر میں|aakhir mein','ڈھونڈو|dhoon-do','کوئی|ko-ee','چیز|cheez','اچھا|ach-chaa','ٹھیک ہے|theek hai','دیکھو|dekh-o','بہت اچھا|ba-hut ach-chaa','مجھے|mu-jhe','دکھاؤ|dik-haa-o','نہیں|na-heen','معلوم|ma-loom','کہاں|ka-haan','ہے|hai','ہیں|hain'].forEach(U);
 function esApplyTables(){
-  const set=(o,h)=>{o.eh=h;o.ep=esRe(h)};
-  const F=o=>ENENG.MAP.get(o),Uu=o=>URENG.MAP.get(o);
-  PATS.forEach(p=>{set(p,EN_P[p.k]);p.mu=MU_P[p.k]});
-  [WHEN,WHAT,WHERE,WHO,WTH,TRAVEL,ADJ,FEEL,MONTHS,DIR,BODY,COL,DEM,OWN,NOUN,NUM,OBJ,JOBS].forEach(T=>T.forEach(o=>{
-    const e=F(o),u=Uu(o);if(!e||!u){console.warn('nomap',o.h);return}
-    set(o,e.en);o.mu=uP0(u.u);
-  }));
-  DATEN.forEach(o=>{set(o,ENO[o.n]);const u=URENG.MAP.get(o);o.mu=u?uP0(u.u):String(o.n)});
+  const set=(o,p)=>{const [u,r]=urP(p);urReg(u,r);o.eh=u;o.ep=r};
+  const names=['PATS','WHEN','WHAT','OBJ','WHERE','WHO','WTH','TRAVEL','ADJ','FEEL','JOBS','MONTHS','DATEN','DIR','BODY','COL','DEM','OWN','NOUN','NUM'];
+  const base={PATS,WHEN,WHAT,OBJ,WHERE,WHO,WTH,TRAVEL,ADJ,FEEL,JOBS,MONTHS,DATEN,DIR,BODY,COL,DEM,OWN,NOUN,NUM};
+  names.forEach(n=>base[n].forEach(o=>{const e=URENG.MAP.get(o);if(!e){console.warn('nomap',n,o.h);return}set(o,e.u)}));
 }
-const esCap=s=>s?s[0].toUpperCase()+s.slice(1):s;
-const esSent=()=>enWords(ENENG.enSent().replace(/\.$/,''));
-const esQuestion=()=>enWords(ENENG.question().en);
-function zhTokens(){return esSent().split(' ').map(w=>{const m=w.match(/^(.*?)([,.!?]*)$/);return {h:w,py:esRespellWord(m[1])+(m[2].includes(',')?'،':'')}})}
-const urMeaning=()=>URENG.sentence().u;
-const urQuestion=()=>URENG.question().u;
+function urS(){const s=URENG.sentence();s.toks.forEach(t=>urReg(t[0].replace(/[۔،؟]+$/,''),t[1]));urReg(s.u,s.r);return s}
+const esSent=()=>urS().u;
+const esQuestion=()=>{const q=URENG.question();q.toks.forEach(t=>urReg(t[0].replace(/[۔،؟]+$/,''),t[1]));return q};
+function zhTokens(){return urS().toks.map(t=>({h:t[0],py:t[1]}))}
 
-/* ===== Urdu meaning-line strings ===== */
-const _uf=i=>UR_COLF_[i];
-const UR_COLF_=['لال','نیلی','ہری','پیلی'];
 const LN={
- what:(i,col)=>col?`کوئی ${UR_COLF_[i]} چیز`:uP0(UR_HUNT[i][1]),
- bare:i=>uP0(UR_HUNT[i][0]),
- find:w=>`${w} ڈھونڈو!`,found:'مل گیا!',show:'بہت اچھا! مجھے دکھاؤ!',holdUp:w=>`${w} اوپر اٹھاؤ`,none:'میرے پاس نہیں ہے',elseR:'ٹھیک ہے! کوئی اور چیز ڈھونڈو!',lookElse:'کوئی اور چیز ڈھونڈو',lookAround:'ٹھیک ہے! آس پاس دیکھو!',itsOk:b=>`ٹھیک ہے! ${b}!`,lookFor:w=>`${w} آس پاس ڈھونڈو`,
- where:(pl,i)=>`${uP0(UR_BODY[i][1])} کہاں ${pl?'ہیں':'ہے'}؟`,here:'یہاں!',touchGood:i=>`اچھا! ${uP0(UR_BODY[i][2])} چھوؤ!`,touch:i=>`${uP0(UR_BODY[i][2])} چھوؤ`,look:(pl,i)=>`دیکھو! ${uP0(UR_BODY[i][1])} یہاں ${pl?'ہیں':'ہے'}۔`,findTouch:i=>`${uP0(UR_BODY[i][2])} ڈھونڈو اور چھوؤ`,ok:i=>`ٹھیک ہے! ${uP0(UR_BODY[i][0])}!`,pointTo:i=>`اشارہ کرو: ${uP0(UR_BODY[i][0])}`,
- pair:(a,b)=>a+'، پھر '+b,triple:(a,b,c)=>'پہلے '+a+'، پھر '+b+'، آخر میں '+c,cue2:'دو مرحلے، ترتیب سے',cue3:'تین مرحلے، ترتیب سے',
- spell:'ہجے',showMe:'دکھاؤ',listen:'سنو',undo:'مٹاؤ',finish:'ختم',done:'ہو گیا',sounds:'آوازیں',practise:'مشق کرو',again:'پھر سے',home:'ہوم',whichWord:'کون سا لفظ؟',play:'سنو',hearAgain:'دوبارہ سنو',sndListen:'سنو: کون سا لفظ سنا؟',seeScore:'اسکور دیکھو',next:'اگلا',
- sndIntro:'انگریزی کی کچھ آوازیں اردو بولنے والوں کے لیے نئی ہیں۔ سننے کے لیے دباؤ۔',
- snd:[{w:'think',m:'سوچنا',t:'\u200Fth: زبان کو دانتوں کے درمیان رکھو اور ہوا پھونکو۔'},{w:'hello',m:'سلام',t:'\u200Fh: شروع میں ہلکی سی سانس۔ اسے چھوڑو نہیں۔'},{w:'sheep',m:'بھیڑ',t:'\u200Fee لمبی آواز ہے: لمبی "ی"۔'},{w:'ship',m:'جہاز',t:'\u200Fi چھوٹی آواز ہے: مختصر اور ڈھیلی "ِ"۔'}],
- pm:{ship:'جہاز',sheep:'بھیڑ',live:'رہنا',leave:'چھوڑنا',sit:'بیٹھنا',seat:'نشست',bit:'ذرا سا',beat:'ہرانا',thin:'پتلا',tin:'ڈبہ',think:'سوچنا',sink:'ڈوبنا',three:'تین',tree:'درخت',hat:'ٹوپی',at:'پر',hair:'بال',air:'ہوا',heat:'گرمی',eat:'کھانا'},
- tip:{i:'\u200Fee لمبی ہے (sheep)، i چھوٹی ہے (ship)۔',th:'\u200Fth: زبان دانتوں کے درمیان، پھر ہوا پھونکو۔',h:'\u200Fh: شروع میں ہلکی سانس۔ اسے چھوڑو نہیں۔'}};
-const DL=Object.fromEntries(Object.entries(UR_DL).map(([k,v])=>[k,uP0(v)]));
+ unc:['water','tea','money','clothes'],
+ what:(i,col)=>col?`something ${MCOL[i][2]}`:(LN.unc.includes(MHUNT[i][2])?`some ${MHUNT[i][2]}`:`a ${MHUNT[i][2]}`),
+ bare:i=>MHUNT[i][2],body:i=>MBODY[i][2],
+ find:w=>`Find ${w}!`,found:'I found it!',show:'Great! Show me!',holdUp:w=>`Hold up ${w} high`,none:"I don't have one",elseR:"It's OK! Look for something else.",lookElse:'Look for a different thing',lookAround:"It's OK! Look around you!",itsOk:b=>`It's OK! ${b[0].toUpperCase()+b.slice(1)}!`,lookFor:w=>`Look around for ${w}`,
+ where:(pl,X)=>`Where ${pl?'are':'is'} your ${X}?`,here:'Here!',touchGood:X=>`Good! Touch your ${X}!`,touch:X=>`Touch your ${X}`,look:(pl,X)=>`Look! Your ${X} ${pl?'are':'is'} here!`,findTouch:X=>`Find and touch your ${X}`,ok:X=>`It's OK! ${X[0].toUpperCase()+X.slice(1)}!`,pointTo:X=>`Point to your ${X}`,
+ pair:(a,b)=>a+', then '+lowerFirst(b),triple:(a,b,c)=>'First '+lowerFirst(a)+', then '+lowerFirst(b)+', finally '+lowerFirst(c),cue2:'Two steps, in order',cue3:'Three steps, in order',
+ spell:'Spell',showMe:'Show me',listen:'Listen',undo:'Undo',finish:'Finish',done:'Done',sounds:'Sounds',practise:'Practise',again:'Again',home:'Home',whichWord:'Which word?',play:'Play',hearAgain:'Hear again',sndListen:'Listen: which word did you hear?',seeScore:'See score',next:'Next',
+ sndIntro:'Some Urdu sounds are new to English ears. Tap to hear each one.',
+ snd:[{w:'پھل',m:'fruit',t:'ph is a p with a puff of air, like blowing out a candle.'},{w:'ڈال',m:'branch',t:'ڈ: curl your tongue back and tap the roof of your mouth.'},{w:'خوش',m:'happy',t:'خ is like ch in Scottish “loch”.'},{w:'ہاں',m:'yes',t:'ں is a soft nasal n: let the air flow through your nose.'}],
+ pm:{'پل':'moment','پھل':'fruit','بار':'time','بھار':'weight','سات':'seven','ساتھ':'with','کال':'call','کھال':'skin','دال':'lentils','ڈال':'branch','تال':'rhythm','ٹال':'put off','کہا':'said','کہاں':'where','ہے':'is','ہیں':'are','غم':'sorrow','گم':'lost'},
+ tip:{asp:'ph, bh, th, kh: add a little puff of air.',ret:'ٹ ڈ: curl the tongue back; it sounds deeper.',nas:'ں is nasal: let the air go through your nose.',gh:'غ is a soft gargled g, deeper than گ.'}};
+const DL={hello:'Hello',gm:'Good morning',goodThanks:'Good! Thank you!',good:'Good!',awesome:'Awesome!',welcome:"You're welcome!",noprob:'No problem!',thanks:'Thank you!',doctor:'Go and see the doctor!',bye:'Goodbye!'};
 
-/* ===== English UI overrides (Latin-script target, Urdu learner) ===== */
-const frNb=t=>String(t);
-function enSent(){return urMeaning()}
-const esStrip=z=>z.replace(/[\s\u00a0]*[!?]$/,'');
-const esLow=t=>t[0].toLowerCase()+t.slice(1);
-const esBig=w=>{const n=w.length;return n<=4?'clamp(72px,26vw,110px)':n<=7?'clamp(54px,19vw,84px)':n<=10?'clamp(42px,14vw,64px)':'clamp(32px,10vw,48px)'};
+/* ===== Urdu UI overrides (English learner) ===== */
+const esStrip=z=>z.replace(/[\s ]*[!؟?۔]$/,'');
+const esLow=t=>t;
+const esBig=w=>{const n=[...w].length;return n<=4?'clamp(64px,22vw,96px)':n<=8?'clamp(50px,16vw,76px)':n<=14?'clamp(34px,10.5vw,52px)':'clamp(26px,8vw,38px)'};
+['پھر|phir','پہلے|pehle','آخر میں|aakhir mein'].forEach(U);
 function mkPair(a,b){
-  const zh=esCap(esStrip(a.zh))+', then '+esLow(esStrip(b.zh))+'!';
-  return {zh,py:esRe(zh),en:LN.pair(a.en,b.en),pic:a.pic+' '+b.pic,cue:LN.cue2};
+  const zh=esStrip(a.zh)+'، پھر '+esStrip(b.zh)+'!';
+  return {zh,py:a.py.replace(/[!?]$/,'')+', phir '+b.py.replace(/[!?]$/,'')+'!',en:LN.pair(a.en,b.en),pic:a.pic+' '+b.pic,cue:LN.cue2};
 }
 function mkTriple(a,b,c){
-  const zh='First '+esLow(esStrip(a.zh))+', then '+esLow(esStrip(b.zh))+', finally '+esLow(esStrip(c.zh))+'!';
-  return {zh,py:esRe(zh),en:LN.triple(a.en,b.en,c.en),pic:a.pic+' '+b.pic+' '+c.pic,cue:LN.cue3};
+  const zh='پہلے '+esStrip(a.zh)+'، پھر '+esStrip(b.zh)+'، آخر میں '+esStrip(c.zh)+'!';
+  const f=x=>x.py.replace(/[!?]$/,'');
+  return {zh,py:'pehle '+f(a)+', phir '+f(b)+', aakhir mein '+f(c)+'!',en:LN.triple(a.en,b.en,c.en),pic:a.pic+' '+b.pic+' '+c.pic,cue:LN.cue3};
 }
 function traceItems(d){return d.w.map(w=>({c:w[0],py:w[1],m:w[2]}))}
-/* spell it */
+/* spell it: isolated Urdu letters */
 function esSpellInit(it){
-  const AUTO=ch=>ch==="'"||ch==='-';
-  const letters=[...it.c].filter(ch=>ch!==' '&&!AUTO(ch));
+  const letters=[...it.c].filter(ch=>ch!==' ');
   let tiles=letters.map(ch=>({ch,used:false})),g=0;
   do{tiles=shuffle(tiles)}while(g++<5&&tiles.map(t=>t.ch).join('')===letters.join('')&&letters.length>1);
-  it.sp={word:it.c,slots:[...it.c].map(ch=>ch===' '?{gap:true}:AUTO(ch)?{ch,filled:ch,auto:true}:{ch,filled:false}),tiles,wrong:0,show:false,done:false,err:-1};
+  it.sp={word:it.c,slots:[...it.c].map(ch=>ch===' '?{gap:true}:{ch,filled:false}),tiles,wrong:0,show:false,done:false,err:-1};
 }
 function trace(){
   const it=V.items[V.i],n=V.items.length;if(!it.sp)esSpellInit(it);const sp=it.sp;
@@ -2800,8 +2450,8 @@ function trace(){
   $('#app').innerHTML=`${topbar(`${LN.spell} ${V.i+1}/${n}`,V.i/n)}
   <div class="stage">
     <div class="thead"><div class="py">${it.py}</div><div class="en">${it.m}</div></div>
-    <div class="tbox spbox" id="tbox"><div class="slots" style="--n:${sp.slots.length}">${slots}</div></div>
-    <div class="tiles">${tiles}</div>
+    <div class="tbox spbox" id="tbox"><div class="slots" dir="rtl" style="--n:${sp.slots.length}">${slots}</div></div>
+    <div class="tiles" dir="rtl">${tiles}</div>
     <div class="tctl">
       <button class="chip-btn" data-a="spshow" aria-label="${LN.showMe}">${ICON.play}${LN.showMe}</button>
       <button class="icon-btn" data-a="sphear" aria-label="${LN.listen}">${ICON.spk}</button>
@@ -2836,12 +2486,15 @@ document.addEventListener('click',e=>{
     else{prog(D().n).trace=1;save();startStep('quiz')}
   }
 });
-/* sounds drill (replaces tones) */
-const ES_PAIRS=[['ship','sheep','i'],['live','leave','i'],['sit','seat','i'],['bit','beat','i'],['thin','tin','th'],['think','sink','th'],['three','tree','th'],['hat','at','h'],['hair','air','h'],['heat','eat','h']];
+/* sounds drill */
+const ES_PAIRS=[['پل|pal','پھل|phal','asp'],['بار|baar','بھار|bhaar','asp'],['سات|saat','ساتھ|saath','asp'],['کال|kaal','کھال|khaal','asp'],['دال|daal','ڈال|Daal','ret'],['تال|taal','ٹال|Taal','ret'],['کہا|ka-haa','کہاں|ka-haan','nas'],['ہے|hai','ہیں|hain','nas'],['غم|gham','گم|gum','gh']];
+ES_PAIRS.forEach(p=>{U(p[0]);U(p[1])});
+LN.snd.forEach(e=>{});['پھل|phal','ڈال|Daal','خوش|khush','ہاں|haan'].forEach(U);
 function buildTones(){
   return shuffle(ES_PAIRS).slice(0,8).map(p=>{
-    const i=Math.random()<.5?0:1,opts=Math.random()<.5?[p[0],p[1]]:[p[1],p[0]];
-    return [p[i],esRespellWord(p[i]),opts.indexOf(p[i]),opts,p[2]];
+    const A=urP(p[0])[0],B=urP(p[1])[0];
+    const i=Math.random()<.5?0:1,opts=Math.random()<.5?[A,B]:[B,A],w=i?B:A;
+    return [w,esRe(w),opts.indexOf(w),opts,p[2]];
   });
 }
 function tones(){
@@ -2849,7 +2502,7 @@ function tones(){
   if(T.i<0){
     $('#app').innerHTML=`${topbar(LN.sounds,0)}
     <div class="stage"><div class="hint">${LN.sndIntro}</div>
-    <div class="tgrid">${LN.snd.map(e=>`<button class="tcard" data-a="say" data-t="${e.w}" data-r=".6"><b>${esRespellWord(e.w)}</b><span>${e.w} <small class="ur">${e.m}</small></span><em>${e.t}</em></button>`).join('')}</div></div>
+    <div class="tgrid">${LN.snd.map(e=>`<button class="tcard" data-a="say" data-t="${e.w}" data-r=".6"><b>${esRe(e.w)}</b><span>${e.w} <small>${e.m}</small></span><em>${e.t}</em></button>`).join('')}</div></div>
     <div class="foot"><button class="btn" data-a="tstart">${LN.practise}</button></div>`;
     return;
   }
@@ -2864,83 +2517,72 @@ function tones(){
   const q=T.q[T.i],a=T.answered;
   $('#app').innerHTML=`${topbar(`${LN.sounds} ${T.i+1}/${T.q.length}`,T.i/T.q.length)}
   <div class="stage"><div class="prompt"><div class="hint">${LN.whichWord}</div><button class="speaker" data-a="say" data-t="${q[0]}" data-r=".6" aria-label="${LN.play}">${ICON.spkBig}</button></div>
-  <div class="topts">${q[3].map((w,k)=>`<button class="topt ${a!=null?(k===q[2]?'good':k===a?'bad':''):''}" data-a="tans" data-k="${k}" ${a!=null?'disabled':''}><b style="font-size:30px">${w}</b>${a!=null?`<small>${LN.pm[w]}</small>`:''}</button>`).join('')}</div>
-  <div class="fb">${a!=null?`<button class="fb-btn" data-a="say" data-t="${q[0]}" data-r=".6" aria-label="${LN.hearAgain}">${ICON.spk}<span class="py">${q[1]}</span><span class="en">${q[0]}</span></button>`:''}</div><div class="tip">${a!=null?LN.tip[q[4]]:LN.sndListen}</div></div>
+  <div class="topts">${q[3].map((w,k)=>`<button class="topt ${a!=null?(k===q[2]?'good':k===a?'bad':''):''}" data-a="tans" data-k="${k}" ${a!=null?'disabled':''}><b style="font-size:38px">${w}</b>${a!=null?`<small>${LN.pm[w]}</small>`:''}</button>`).join('')}</div>
+  <div class="fb">${a!=null?`<button class="fb-btn" data-a="say" data-t="${q[0]}" data-r=".6" aria-label="${LN.hearAgain}">${ICON.spk}<span class="py">${q[1]}</span><span class="en">${LN.pm[q[0]]}</span></button>`:''}</div><div class="tip">${a!=null?LN.tip[q[4]]:LN.sndListen}</div></div>
   <div class="foot"><button class="btn" data-a="tnext" ${a==null?'disabled':''}>${T.i===T.q.length-1?LN.seeScore:LN.next}</button></div>`;
   if(a==null)setTimeout(()=>speak(q[0],.6),150);
 }
 /* move: hunts and body parts */
-const esIDK=["I don't know",esRe("I don't know"),IDK[2]],esIDU=["I don't understand",esRe("I don't understand"),IDU[2]];
+const esR=(p,en)=>{const [u,r]=urP(p);U(p);return [u,r,en]};
+const esIDK=esR('مجھے نہیں معلوم|mu-jhe na-heen ma-loom',IDK[2]),esIDU=esR('مجھے سمجھ نہیں آیا|mu-jhe sa-majh na-heen aa-yaa',IDU[2]);
 const esPickI=(n,tw,word)=>{
   const f=[];if(tw)for(let i=0;i<n;i++){const w=word(i);if(tw.some(t=>t===w||(t.length>3&&(t.includes(w)||w.includes(t)))))f.push(i)}
   return (f.length&&Math.random()<.7)?f[Math.floor(Math.random()*f.length)]:Math.floor(Math.random()*n);
 };
-const esR=(t,en)=>[t,esRe(t),en];
-
+const UR_COLF=['لال|laal','نیلی|nee-lee','ہری|ha-ree','پیلی|pee-lee'];
 function mvHunt(tw){
   const col=Math.random()<.4;
-  const i=col?esPickI(4,tw,j=>ES_COLS[j]):esPickI(ES_HUNT.length,tw,j=>ES_HUNT[j][0]);
-  const zh=col?`Find something ${ES_COLS[i]}!`:`Find ${ES_HUNT[i][1]}!`;
+  const i=col?esPickI(4,tw,j=>urP(UR_COLS[j])[0]):esPickI(UR_HUNT.length,tw,j=>urP(UR_HUNT[j][0])[0]);
+  let zh,zr;
+  if(col){const c=urP(UR_COLF[i]);zh=`کوئی ${c[0]} چیز ڈھونڈو!`;zr=`ko-ee ${c[1]} cheez dhoon-do!`}
+  else{const h=urP(UR_HUNT[i][1]);zh=`${h[0]} ڈھونڈو!`;zr=`${h[1]} dhoon-do!`}
+  urReg(zh,zr);
   const what=LN.what(i,col);
   const bare=col?null:LN.bare(i);
-  return {t:'talk',q:[zh,esRe(zh),LN.find(what)],o:[
-    [...esR('I found it!',LN.found),...esR('Very good! Show me!',LN.show),LN.holdUp(what)],
-    [...esR("I don't have one",LN.none),...esR("It's OK! Look for something else.",LN.elseR),LN.lookElse],
-    [...esIDU,...esR(col?"It's OK! Look around you!":`It's OK! ${esCap(ES_HUNT[i][0])}!`,col?LN.lookAround:LN.itsOk(bare)),LN.lookFor(what)]]};
+  const bu=col?null:urP(UR_HUNT[i][0])[0];
+  return {t:'talk',q:[zh,zr,LN.find(what)],o:[
+    [...esR('مل گیا!|mil ga-yaa!',LN.found),...esR('بہت اچھا! مجھے دکھاؤ!|ba-hut ach-chaa! mu-jhe dik-haa-o!',LN.show),LN.holdUp(what)],
+    [...esR('میرے پاس نہیں ہے|me-re paas na-heen hai',LN.none),...esR('ٹھیک ہے! کوئی اور چیز ڈھونڈو!|theek hai! ko-ee aur cheez dhoon-do!',LN.elseR),LN.lookElse],
+    [...esIDU,...(col?esR('ٹھیک ہے! اپنے آس پاس دیکھو!|theek hai! ap-ne aas paas dekh-o!',LN.lookAround):esR(`ٹھیک ہے! ${bu}!|theek hai! ${urP(UR_HUNT[i][0])[1]}!`,LN.itsOk(bare))),LN.lookFor(what)]]};
 }
 function mvBody(tw){
-  const i=esPickI(ES_BODY.length,tw,j=>ES_BODY[j][0]),b=ES_BODY[i],pl=b[2],P=!!UR_BODY[i][3];
-  const be=pl?'are':'is';
-  return {t:'talk',q:[`Where ${be} ${b[1]}?`,esRe(`Where ${be} ${b[1]}`),LN.where(P,i)],o:[
-    [...esR('Here!',LN.here),...esR(`Good! Touch ${b[1]}!`,LN.touchGood(i)),LN.touch(i)],
-    [...esIDK,...esR(`Look! ${esCap(b[1])} ${be} here.`,LN.look(P,i)),LN.findTouch(i)],
-    [...esIDU,...esR(`It's OK! ${esCap(b[0])}!`,LN.ok(i)),LN.pointTo(i)]]};
+  const i=esPickI(UR_BODY.length,tw,j=>urP(UR_BODY[j][0])[0]),b=UR_BODY[i],pl=b[3],X=LN.body(i),P=!!MBODY[i][3];
+  const nom=urP(b[1]),obj=urP(b[2]),bare=urP(b[0]),hh=pl?['ہیں','hain']:['ہے','hai'];
+  const qz=`${nom[0]} کہاں ${hh[0]}؟`,qr=`${nom[1]} ka-haan ${hh[1]}?`;urReg(qz,qr);
+  return {t:'talk',q:[qz,qr,LN.where(P,X)],o:[
+    [...esR('یہاں!|ya-haan!',LN.here),...esR(`اچھا! ${obj[0]} چھوؤ!|ach-chaa! ${obj[1]} chhoo-o!`,LN.touchGood(X)),LN.touch(X)],
+    [...esIDK,...esR(`دیکھو! ${nom[0]} یہاں ${hh[0]}۔|dekh-o! ${nom[1]} ya-haan ${hh[1]}.`,LN.look(P,X)),LN.findTouch(X)],
+    [...esIDU,...esR(`ٹھیک ہے! ${bare[0]}!|theek hai! ${bare[1]}!`,LN.ok(X)),LN.pointTo(X)]]};
 }
 /* dialogue */
 function dlgLines(){
-  const R=(zh,en)=>{zh=frNb(zh);return {zh,py:esRe(zh),en}};
-  const gr=V.day===5?['Good morning',DL.gm]:['Hello',DL.hello];
+  const R=(zh,en)=>({zh,py:esRe(zh),en});
+  const D=k=>{const p=urP(UR_DL[k]);return R(p[0],DL[k])};
+  const gr=V.day===5?['صبح بخیر','su-bah ba-khair',DL.gm]:['سلام','sa-laam',DL.hello];
   const q=question();
-  const L={q:R(`${gr[0]}! ${q.zh}`,`${gr[1]}! ${q.en}`),a:R(crZh(),enSent()),
-    g:V.day>=5?R('Good! Thank you!',DL.goodThanks):R('Good!',DL.good),c:R('Awesome!',DL.awesome)};
-  if(V.day>=5)L.r=R("You're welcome!",DL.welcome);
-  if(pat().k==='sorry'){L.g=R('No problem!',DL.noprob);L.r=R('Thank you!',DL.thanks);L.r2=R("You're welcome!",DL.welcome)}
-  if(pat().k==='health'){L.g=R('Go and see the doctor!',DL.doctor);L.r=R('Thank you!',DL.thanks);L.r2=R("You're welcome!",DL.welcome)}
-  if(V.day>=6){L.b=R('Goodbye!',DL.bye);L.b2=R('Goodbye!',DL.bye)}
+  const L={q:{zh:`${gr[0]}! ${q.zh}`,py:`${gr[1]}! ${q.py}`,en:`${gr[2]}! ${q.en}`},a:R(crZh(),enSent()),
+    g:V.day>=5?D('goodThanks'):D('good'),c:D('awesome')};
+  if(V.day>=5)L.r=D('welcome');
+  if(pat().k==='sorry'){L.g=D('noprob');L.r=D('thanks');L.r2=D('welcome')}
+  if(pat().k==='health'){L.g=D('doctor');L.r=D('thanks');L.r2=D('welcome')}
+  if(V.day>=6){L.b=D('bye');L.b2=D('bye')}
   return L;
 }
-function question(){const t=esQuestion();return {zh:t,py:esRe(t),en:urQuestion()}}
+function question(){const q=questionL(),t=esQuestion();return {zh:t.u,py:t.r,en:q.en}}
 function crOpts(k){
   const o=crOptsBase(k);
-  if(k==='half')o.forEach(x=>{x.eh=x.half?'half past':"o'clock";x.ep=esRe(x.eh);x.mu=x.half?'ساڑھے':'پورے'});
+  if(k==='half')o.forEach(x=>{const p=urP(x.half?'ساڑھے|saarh-e':'بجے|ba-je');x.eh=p[0];x.ep=p[1]});
   return o;
 }
 /* apply data overlays */
 esApplyTables();
-const _TI=UR_TITLES;
-DAYS.forEach((d,i)=>{
-  if(_TI[d.t]===undefined)console.warn('title',d.t);
-  d.t=_TI[d.t]||d.t;
-  d.w.forEach((w,j)=>{
-    const t=ES_WORDS[i][j],rs=esRe(t),sy=esWordSyl(t),ps=esRespellSyl(t);
-    w[0]=t;w[1]=rs;w[2]=uP0(UR_WORDS[i][j]);
-    w[3]=(!t.includes(' ')&&sy.length>1&&ps.length===sy.length)?sy.map((x,k)=>[x,ps[k],'']):[[t,rs,'']];
-  });
-});
-ACTS.forEach((a,i)=>{a.zh=ES_ACTS[i];a.py=esRe(a.zh);a.en=UR_ACTINS[i]});
-const _UD=['آگے','پیچھے','بائیں طرف','دائیں طرف'];
-MDIRS.forEach((m,i)=>{m.zh=ES_MDIRS[i];m.py=esRe(m.zh);m.en=_UD[i]});
+DAYS.forEach((d,i)=>d.w.forEach((w,j)=>{const [u,r]=urP(UR_WORDS[i][j]);w[0]=u;w[1]=r;w[3]=[[u,r,'']]}));
+ACTS.forEach((a,i)=>{const [u,r]=urP(UR_ACTS[i]);a.zh=u;a.py=r});
+MDIRS.forEach((m,i)=>{const [u,r]=urP(UR_MDIRS[i]);m.zh=u;m.py=r});
 MTALK.forEach((m,i)=>{
-  const E=ES_MT[i],U=UR_MT[i];m.q[0]=E.q;m.q[1]=esRe(E.q);m.q[2]=uP0(U.q);
-  m.o.forEach((o,j)=>{
-    const cue=o[6];
-    o[0]=E.o[j][0];o[1]=esRe(o[0]);o[2]=uP0(U.o[j][0]);
-    o[3]=E.o[j][1];o[4]=esRe(o[3]);o[5]=uP0(U.o[j][1]);
-    if(UR_CUES[cue]===undefined)console.warn('cue',cue);
-    o[6]=UR_CUES[cue]||cue;
-  });
+  const E=UR_MT[i],q=urP(E.q);m.q[0]=q[0];m.q[1]=q[1];
+  m.o.forEach((o,j)=>{const a=urP(E.o[j][0]),b=urP(E.o[j][1]);o[0]=a[0];o[1]=a[1];o[3]=b[0];o[4]=b[1];o[6]=String(o[6]).replace(/我/g,'میں').replace(/妈妈/g,'امی')});
 });
-/* builder: speak the target-language word, not the Chinese one */
 function crPick(i){
   if(V.busy)return;
   const st=crSteps(),c=V.cr,k=st[c.i],o=crOpts(k)[i];if(!o)return;

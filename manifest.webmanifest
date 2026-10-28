@@ -1,8 +1,8 @@
 {
-  "name": "انگلش روزانہ",
-  "short_name": "English",
-  "description": "اردو بولنے والوں کے لیے روزانہ انگریزی",
-  "lang": "ur",
+  "name": "Urdu Daily",
+  "short_name": "Urdu",
+  "description": "Four Urdu words a day: learn, spell, practise and build sentences.",
+  "lang": "en",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
